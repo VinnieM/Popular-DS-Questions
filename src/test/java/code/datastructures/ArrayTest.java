@@ -6,7 +6,7 @@ import org.junit.Test;
 
 public class ArrayTest {
 
-  private Array arrayQuestions = new Array();
+  private final Array arrayQuestions = new Array();
 
 
   @Test
@@ -22,5 +22,17 @@ public class ArrayTest {
 
     returnValue = arrayQuestions.getMaxAndMinElement(TestData.mediumArrayUnsorted);
     Assert.assertArrayEquals(new int[]{50, 1}, returnValue);
+  }
+
+  @Test
+  public void testNthSmallest() {
+    int returnValue = arrayQuestions.getNthSmallest(TestData.mediumArrayUnsorted, 39);
+    Assert.assertEquals(TestData.mediumArrayUnsorted[returnValue], 39);
+
+    returnValue = arrayQuestions.getNthSmallest(TestData.mediumArrayUnsorted, 21);
+    Assert.assertEquals(TestData.mediumArrayUnsorted[returnValue], 21);
+
+    returnValue = arrayQuestions.getNthSmallest(TestData.mediumArrayUnsorted, 9);
+    Assert.assertEquals(TestData.mediumArrayUnsorted[returnValue], 9);
   }
 }

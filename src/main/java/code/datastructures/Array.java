@@ -32,4 +32,28 @@ public class Array {
     }
     return new int[]{max, min};
   }
+
+  /**
+   * Get the Nth smallest element in an Array
+   */
+  public int getNthSmallest(int[] arr, int element) {
+    int j = 0;
+    for (int i = 0; i < arr.length; i++) {
+      if (arr[i] == element) {
+        swap(arr, i, arr.length - 1);
+      }
+      if (arr[i] < element) {
+        swap(arr, i, j);
+        ++j;
+      }
+    }
+    swap(arr, j, arr.length - 1);
+    return j;
+  }
+
+  public void swap(int[] arr, int i, int j) {
+    int temp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = temp;
+  }
 }
