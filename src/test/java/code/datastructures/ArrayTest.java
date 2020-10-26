@@ -26,13 +26,16 @@ public class ArrayTest {
 
   @Test
   public void testNthSmallest() {
-    int returnValue = arrayQuestions.getNthSmallest(TestData.mediumArrayUnsorted, 39);
-    Assert.assertEquals(TestData.mediumArrayUnsorted[returnValue], 39);
+    int returnValue = arrayQuestions
+        .getNthSmallest(TestData.randomNumbers, 0, TestData.randomNumbers.length - 1, 39);
+    Assert.assertEquals(returnValue, -310);
 
-    returnValue = arrayQuestions.getNthSmallest(TestData.mediumArrayUnsorted, 21);
-    Assert.assertEquals(TestData.mediumArrayUnsorted[returnValue], 21);
+    returnValue = arrayQuestions
+        .getNthSmallest(TestData.randomNumbers, 0, TestData.randomNumbers.length - 1, 21);
+    Assert.assertEquals(returnValue, -372);
 
-    returnValue = arrayQuestions.getNthSmallest(TestData.mediumArrayUnsorted, 9);
-    Assert.assertEquals(TestData.mediumArrayUnsorted[returnValue], 9);
+    returnValue = arrayQuestions
+        .getNthSmallest(TestData.randomNumbers, 0, TestData.randomNumbers.length - 1, 115);
+    Assert.assertEquals(returnValue, 41);
   }
 }

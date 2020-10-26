@@ -1,5 +1,8 @@
 package code.datastructures;
 
+import java.sql.SQLOutput;
+import java.util.Arrays;
+
 public class Array {
 
   /**
@@ -36,22 +39,32 @@ public class Array {
   /**
    * Get the Nth smallest element in an Array
    */
-  public int getNthSmallest(int[] arr, int element) {
-    int j = 0;
-    for (int i = 0; i < arr.length; i++) {
-      if (arr[i] == element) {
-        swap(arr, i, arr.length - 1);
-      }
-      if (arr[i] < element) {
-        swap(arr, i, j);
+  public int getNthSmallest(int[] arr, int low, int high, int element) {
+    int pivot = lomutoPartition(arr, low, high);
+    if (element == pivot) {
+      return arr[pivot];
+    } else if (element < pivot) {
+      return getNthSmallest(arr, low, pivot - 1, element);
+    } else {
+      return getNthSmallest(arr, pivot + 1, high, element);
+    }
+  }
+
+  private int lomutoPartition(int[] arr, int low, int high) {
+    int pivot = arr[high], j = low;
+    for (int i = low; i < high; i++) {
+      if (arr[i] < pivot) {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
         ++j;
       }
     }
-    swap(arr, j, arr.length - 1);
+    swap(arr, j, high);
     return j;
   }
 
-  public void swap(int[] arr, int i, int j) {
+  private void swap(int[] arr, int i, int j) {
     int temp = arr[i];
     arr[i] = arr[j];
     arr[j] = temp;
