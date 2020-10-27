@@ -38,4 +38,11 @@ public class ArrayTest {
         .getNthSmallest(TestData.randomNumbers, 0, TestData.randomNumbers.length - 1, 115);
     Assert.assertEquals(returnValue, 41);
   }
+
+  @Test
+  public void testSortArrayOfZeroOneAndTwo() {
+    int[] temp = {0,0,0,0,1,1,2,2};
+    int[] returnValue = arrayQuestions.sortArrayOfZeroOneAndTwo(new int[] {0,2,1,0,2,0,1,0});
+    Assert.assertArrayEquals(temp, returnValue);
+  }
 }

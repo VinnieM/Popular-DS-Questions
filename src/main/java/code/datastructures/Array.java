@@ -1,8 +1,5 @@
 package code.datastructures;
 
-import java.sql.SQLOutput;
-import java.util.Arrays;
-
 public class Array {
 
   /**
@@ -70,7 +67,7 @@ public class Array {
     arr[j] = temp;
   }
 
-  public void sortArrayOfZeroOneAndTwo(int[] arr) {
+  public int[] sortArrayOfZeroOneAndTwo(int[] arr) {
     int low = 0, mid = 0, high = arr.length - 1;
     while (mid <= high) {
       if (arr[mid] == 0) {
@@ -84,5 +81,6 @@ public class Array {
         --high;
       }
     }
+    return arr;
   }
 }
