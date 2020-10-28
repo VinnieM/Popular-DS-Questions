@@ -50,4 +50,9 @@ public class ArrayTest {
   public void testMoveNegativeElementsToLeft() {
     arrayQuestions.moveNegativeElementsToLeft(TestData.randomNumbers);
   }
+
+  @Test
+  public void testFindUnionOfArrays() {
+    arrayQuestions.UnionOfTwoArrays(TestData.tinyArrayUnsorted, TestData.tinyArrayUnsorted);
+  }
 }

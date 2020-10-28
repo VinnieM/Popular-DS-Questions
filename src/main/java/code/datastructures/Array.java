@@ -1,5 +1,7 @@
 package code.datastructures;
 
+import java.util.Arrays;
+
 public class Array {
 
   /**
@@ -93,4 +95,54 @@ public class Array {
       }
     }
   }
+
+  public void UnionOfTwoArrays(int[] array1, int[] array2) {
+    int[] arrayToReturn = new int[array1.length + array2.length];
+    int i = 0, j = 0, k = 0,
+        array1Length = array1.length, array2Length = array2.length;
+    quickSort(array1, 0, array1.length - 1);
+    quickSort(array2, 0, array2.length - 1);
+    while (i < array1Length && j < array2Length) {
+      if (array1[i] < array2[j]) {
+        arrayToReturn[k++] = array1[i++];
+      } else if (array1[i] > array2[j]) {
+        arrayToReturn[k++] = array2[j++];
+      } else if(array1[i] == array2[j]) {
+        arrayToReturn[k++] = array1[i++];
+        ++j;
+      }
+    }
+    while (i < array1Length) {
+      arrayToReturn[k++] = array1[i++];
+    }
+    while (j < array2Length) {
+      arrayToReturn[k++] = array2[j++];
+    }
+    System.out.println(Arrays.toString(arrayToReturn));
+  }
+
+  private void quickSort(int[] arr, int low, int high) {
+    if (low < high) {
+      int pivot = getPivot(arr, low, high);
+      quickSort(arr, low, pivot - 1);
+      quickSort(arr, pivot + 1, high);
+    }
+  }
+
+  private int getPivot(int[] arr, int low, int high) {
+    int pivot = arr[high], j = low;
+    for (int i = low; i < high; i++) {
+      if (arr[i] < pivot) {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+        ++j;
+      }
+    }
+    int temp = arr[j];
+    arr[j] = arr[high];
+    arr[high] = temp;
+    return j;
+  }
+
 }
