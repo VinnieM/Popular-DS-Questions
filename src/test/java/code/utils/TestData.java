@@ -18,6 +18,7 @@ public class TestData {
       64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86,
       87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100};
   public static final int[] tinyArrayUnsorted = {5, 3, 4, 1, 2};
+  public static final int[] tinyArrayUnsorted2 = {9, 7, 10, 8, 6};
   public static final int[] smallArrayUnsorted = {9, 6, 10, 1, 3, 5, 2, 8, 4, 7};
   public static final int[] mediumArrayUnsorted = {47, 48, 27, 10, 5, 34, 24, 45, 12, 3, 11, 16, 14,
       15, 43, 46, 21, 18, 13, 50, 29, 7, 28, 49, 25, 17, 20, 33, 44, 23, 6, 30, 22, 40, 32, 4, 8,
