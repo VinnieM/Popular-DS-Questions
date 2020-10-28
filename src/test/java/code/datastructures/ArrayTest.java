@@ -55,4 +55,16 @@ public class ArrayTest {
   public void testFindUnionOfArrays() {
     arrayQuestions.UnionOfTwoArrays(TestData.tinyArrayUnsorted, TestData.tinyArrayUnsorted);
   }
+
+  @Test
+  public void testCyclicRotationOfArray() {
+    int[] testValue1 = {3, 4, 5, 1, 2};
+    int[] testValue2 = {5, 1, 2, 3, 4};
+
+    Assert.assertArrayEquals(testValue1,
+        arrayQuestions.cyclicRotationOfArray(TestData.tinyArray, 2));
+    Assert.assertArrayEquals(testValue2,
+        arrayQuestions.cyclicRotationOfArray(TestData.tinyArray, 4));
+  }
+
 }

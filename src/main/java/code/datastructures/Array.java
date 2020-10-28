@@ -69,6 +69,10 @@ public class Array {
     arr[j] = temp;
   }
 
+  /**
+   * Program to sort an array containing only 0's, 1's and 2 without using any sorting algorithm and
+   * without using any extra memory.
+   */
   public int[] sortArrayOfZeroOneAndTwo(int[] arr) {
     int low = 0, mid = 0, high = arr.length - 1;
     while (mid <= high) {
@@ -86,6 +90,9 @@ public class Array {
     return arr;
   }
 
+  /**
+   * Program to move all the negative elements to the left and positive elements to the right.
+   */
   public void moveNegativeElementsToLeft(int[] arr) {
     int j = 0;
     for (int i = 0; i < arr.length; i++) {
@@ -96,6 +103,9 @@ public class Array {
     }
   }
 
+  /**
+   * Program to find the union of 2 sorted arrays.
+   */
   public void UnionOfTwoArrays(int[] array1, int[] array2) {
     int[] arrayToReturn = new int[array1.length + array2.length];
     int i = 0, j = 0, k = 0,
@@ -107,7 +117,7 @@ public class Array {
         arrayToReturn[k++] = array1[i++];
       } else if (array1[i] > array2[j]) {
         arrayToReturn[k++] = array2[j++];
-      } else if(array1[i] == array2[j]) {
+      } else if (array1[i] == array2[j]) {
         arrayToReturn[k++] = array1[i++];
         ++j;
       }
@@ -145,4 +155,20 @@ public class Array {
     return j;
   }
 
+  /**
+   * Cyclically rotate an array n number of times, where n is less than or equal to the size of the
+   * array.
+   */
+  // 1,2,3,4,5
+  public int[] cyclicRotationOfArray(int[] arr, int n) {
+    int[] arrayToReturn = new int[arr.length];
+    int i, j = 0;
+    for (i = n; i < arr.length; i++, j++) {
+      arrayToReturn[j] = arr[i];
+    }
+    for (i = 0; i < n; i++, j++) {
+      arrayToReturn[j] = arr[i];
+    }
+    return arrayToReturn;
+  }
 }
