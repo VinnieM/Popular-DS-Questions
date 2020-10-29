@@ -67,4 +67,9 @@ public class ArrayTest {
         arrayQuestions.cyclicRotationOfArray(TestData.tinyArray, 4));
   }
 
+  @Test
+  public void testLargestSubArray() {
+    int[] testValue = {-3, 8, -2, 4, -5, 6};
+    Assert.assertEquals(arrayQuestions.largestSubArray(testValue), 11);
+  }
 }
