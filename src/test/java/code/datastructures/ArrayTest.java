@@ -8,7 +8,6 @@ public class ArrayTest {
 
   private final Array arrayQuestions = new Array();
 
-
   @Test
   public void testReverseArray() {
     int[] reversedArray = arrayQuestions.reverseArray(TestData.smallArray);
@@ -71,5 +70,15 @@ public class ArrayTest {
   public void testLargestSubArray() {
     int[] testValue = {-3, 8, -2, 4, -5, 6};
     Assert.assertEquals(arrayQuestions.largestSubArray(testValue), 11);
+  }
+
+  @Test
+  public void testSomething() {
+    int[] temp = {1, 4, 3, 2, 6, 7};
+    int[] temp2 = {1, 3, 5, 8, 9, 2, 6, 2, 6, 8, 9, 10, 4, 7, 10};
+    int[] temp3 = {1, 0, 3, 2, 6, 7};
+    Assert.assertEquals(arrayQuestions.minimumNumberOfJumps(temp), 2);
+    Assert.assertEquals(arrayQuestions.minimumNumberOfJumps(temp2), 3);
+    Assert.assertEquals(arrayQuestions.minimumNumberOfJumps(temp3), -1);
   }
 }

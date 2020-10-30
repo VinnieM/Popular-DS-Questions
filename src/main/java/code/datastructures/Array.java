@@ -186,7 +186,7 @@ public class Array {
   }
 
   /**
-   * Minimum number of jumps
+   * Minimum number of jumps.
    */
   public int minimumNumberOfJumps(int[] arr) {
     int currentLength = arr.length - 1, totalJumps = 0,
@@ -195,7 +195,7 @@ public class Array {
       value = arr[i];
       if (value >= currentLength) {
         return ++totalJumps;
-      } else if (value < 0) {
+      } else if (value == 0) {
         return -1;
       }
       i += value;
