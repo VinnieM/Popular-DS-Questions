@@ -184,4 +184,23 @@ public class Array {
     }
     return maxValue;
   }
+
+  /**
+   * Minimum number of jumps
+   */
+  public int minimumNumberOfJumps(int[] arr) {
+    int currentLength = arr.length - 1, totalJumps = 0,
+        i = 0, value = 0;
+    while (true) {
+      value = arr[i];
+      if (value >= currentLength) {
+        return ++totalJumps;
+      } else if (value < 0) {
+        return -1;
+      }
+      i += value;
+      ++totalJumps;
+      currentLength -= i;
+    }
+  }
 }
