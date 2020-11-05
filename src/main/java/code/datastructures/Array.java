@@ -198,9 +198,28 @@ public class Array {
       } else if (value == 0) {
         return -1;
       }
-      i += value;
+      i = i + value;
       ++totalJumps;
       currentLength -= i;
+    }
+  }
+
+  /**
+   * Find the duplicate number in an array where only one number is duplicated.
+   */
+  public int findDuplicateNumber(int[] arr) {
+    if (arr.length > 1) {
+      quickSort(arr, 0, arr.length - 1);
+      int previous = 0;
+      for (int i = 1; i < arr.length; i++) {
+        if (arr[i] == arr[previous]) {
+          return arr[i];
+        }
+        ++previous;
+      }
+      return -1;
+    } else {
+      return arr[0];
     }
   }
 }

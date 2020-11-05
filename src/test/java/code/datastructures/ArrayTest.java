@@ -73,12 +73,12 @@ public class ArrayTest {
   }
 
   @Test
-  public void testSomething() {
-    int[] temp = {1, 4, 3, 2, 6, 7};
-    int[] temp2 = {1, 3, 5, 8, 9, 2, 6, 2, 6, 8, 9, 10, 4, 7, 10};
-    int[] temp3 = {1, 0, 3, 2, 6, 7};
-    Assert.assertEquals(arrayQuestions.minimumNumberOfJumps(temp), 2);
-    Assert.assertEquals(arrayQuestions.minimumNumberOfJumps(temp2), 3);
-    Assert.assertEquals(arrayQuestions.minimumNumberOfJumps(temp3), -1);
+  public void testFindDuplicateNumber() {
+    int[] testValue = {3, 6, 8, 10, 2, 1, 3, -3, 9};
+    int[] testValue1 = {1, 1};
+    int[] testValue2 = {1, 1, 2};
+    Assert.assertEquals(arrayQuestions.findDuplicateNumber(testValue), 3);
+    Assert.assertEquals(arrayQuestions.findDuplicateNumber(testValue1), 1);
+    Assert.assertEquals(arrayQuestions.findDuplicateNumber(testValue2), 1);
   }
 }
