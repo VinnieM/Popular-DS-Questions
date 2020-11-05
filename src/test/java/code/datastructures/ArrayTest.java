@@ -81,4 +81,10 @@ public class ArrayTest {
     Assert.assertEquals(arrayQuestions.findDuplicateNumber(testValue1), 1);
     Assert.assertEquals(arrayQuestions.findDuplicateNumber(testValue2), 1);
   }
+
+  @Test
+  public void testFindDuplicateNumbers() {
+    int[] testValue = {3, 6, 8, 10, 2, 1, 3, -3, 9, 2};
+    arrayQuestions.findDuplicatesNumbers(testValue);
+  }
 }

@@ -1,6 +1,7 @@
 package code.datastructures;
 
 import java.util.Arrays;
+import java.util.HashMap;
 
 public class Array {
 
@@ -221,5 +222,25 @@ public class Array {
     } else {
       return arr[0];
     }
+  }
+
+  /**
+   * Find all the duplicate numbers in an array.
+   */
+  public void findDuplicatesNumbers(int[] arr) {
+    HashMap<Integer, Integer> hashMap = new HashMap<>();
+    for (int eachValue : arr) {
+      if (hashMap.containsKey(eachValue)) {
+        int value = hashMap.get(eachValue);
+        hashMap.put(eachValue, ++value);
+      } else {
+        hashMap.put(eachValue, 1);
+      }
+    }
+    hashMap.forEach((x, y) -> {
+      if (y > 1) {
+        System.out.println("The number " + x + " is repeating " + y + " times.");
+      }
+    });
   }
 }
