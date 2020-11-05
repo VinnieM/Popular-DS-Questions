@@ -94,4 +94,12 @@ public class ArrayTest {
     int[] testValue2 = {0, 2, 6, 8, 9};
     arrayQuestions.merge(testValue, testValue2);
   }
+
+  @Test
+  public void testKadanesAlgorithm() {
+    int[] testValue = {1,2,3,-2,5};
+    int[] testValue2 = {-1,-2,-3,-4};
+    Assert.assertEquals(arrayQuestions.kadanesAlgorithm(testValue), 9);
+    Assert.assertEquals(arrayQuestions.kadanesAlgorithm(testValue2), -1);
+  }
 }

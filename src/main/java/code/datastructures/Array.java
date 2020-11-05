@@ -269,4 +269,16 @@ public class Array {
       ++j;
     }
   }
+
+  /**
+   * This the Kadane's Algorithm which is used to find the longest subarray sequence.
+   */
+  public int kadanesAlgorithm(int[] arr) {
+    int currentMax = arr[0], maxSum = arr[0];
+    for (int i = 1; i < arr.length; i++) {
+      currentMax = Math.max(currentMax + arr[i], arr[i]);
+      maxSum = Math.max(currentMax, maxSum);
+    }
+    return maxSum;
+  }
 }
