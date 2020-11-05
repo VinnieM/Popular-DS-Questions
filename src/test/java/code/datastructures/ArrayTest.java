@@ -87,4 +87,11 @@ public class ArrayTest {
     int[] testValue = {3, 6, 8, 10, 2, 1, 3, -3, 9, 2};
     arrayQuestions.findDuplicatesNumbers(testValue);
   }
+
+  @Test
+  public void testMerge() {
+    int[] testValue = {1, 3, 5, 7};
+    int[] testValue2 = {0, 2, 6, 8, 9};
+    arrayQuestions.merge(testValue, testValue2);
+  }
 }

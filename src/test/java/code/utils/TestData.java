@@ -8,6 +8,7 @@ public class TestData {
   }
 
   public static final int[] tinyArray = {1, 2, 3, 4, 5};
+  public static final int[] tinyArray2 = {6, 7, 8, 9, 10};
   public static final int[] smallArray = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
   public static final int[] mediumArray = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16,
       17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39,

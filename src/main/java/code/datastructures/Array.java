@@ -243,4 +243,30 @@ public class Array {
       }
     });
   }
+
+  /**
+   * Merge 2 arrays without extra space
+   */
+  public void merge(int[] arr1, int[] arr2) {
+    int i = 0, j = 0;
+    int arr1Length = arr1.length, arr2Length = arr2.length;
+
+    while (i < arr1Length && j < arr2Length) {
+      if (arr1[i] < arr2[j]) {
+        System.out.print(arr1[i] + " ");
+        ++i;
+      } else {
+        System.out.print(arr2[j] + " ");
+        ++j;
+      }
+    }
+    while (i < arr1Length) {
+      System.out.print(arr1[i] + " ");
+      ++i;
+    }
+    while (j < arr2Length) {
+      System.out.print(arr2[j] + " ");
+      ++j;
+    }
+  }
 }
