@@ -108,4 +108,11 @@ public class ArrayTest {
     int[] testValue = {3, 1, 3, 4, 2};
     Assert.assertEquals(arrayQuestions.findDuplicateNum(testValue), 3);
   }
+
+  @Test
+  public void testMoveZeroToLeft() {
+    int[] testValue = {1, 3, 0, 2, 5, 0, 7};
+    int[] expectedValue = {0, 0, 1, 3, 2, 5, 7};
+    Assert.assertArrayEquals(arrayQuestions.moveZeroToLeft(testValue), expectedValue);
+  }
 }

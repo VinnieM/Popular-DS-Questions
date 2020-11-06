@@ -299,4 +299,23 @@ public class Array {
     }
     return slow;
   }
+
+  /**
+   * Given an array, move all the zeros to the left and other elements to the right in O(n) time and
+   * O(1) space.
+   */
+  public int[] moveZeroToLeft(int[] arr) {
+    int j = arr.length - 1;
+    for (int i = arr.length - 1; i >= 0; i--) {
+      if (arr[i] != 0) {
+        arr[j] = arr[i];
+        --j;
+      }
+    }
+    while (j >= 0) {
+      arr[j] = 0;
+      --j;
+    }
+    return arr;
+  }
 }
