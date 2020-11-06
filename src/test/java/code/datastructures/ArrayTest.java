@@ -97,9 +97,15 @@ public class ArrayTest {
 
   @Test
   public void testKadanesAlgorithm() {
-    int[] testValue = {1,2,3,-2,5};
-    int[] testValue2 = {-1,-2,-3,-4};
+    int[] testValue = {1, 2, 3, -2, 5};
+    int[] testValue2 = {-1, -2, -3, -4};
     Assert.assertEquals(arrayQuestions.kadanesAlgorithm(testValue), 9);
     Assert.assertEquals(arrayQuestions.kadanesAlgorithm(testValue2), -1);
+  }
+
+  @Test
+  public void testFindDuplicate() {
+    int[] testValue = {3, 1, 3, 4, 2};
+    Assert.assertEquals(arrayQuestions.findDuplicateNum(testValue), 3);
   }
 }

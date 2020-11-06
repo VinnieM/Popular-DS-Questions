@@ -281,4 +281,22 @@ public class Array {
     }
     return maxSum;
   }
+
+  /**
+   * Find the duplicate number in a string where it time should be less than O(n2) and space should
+   * be O(1).
+   */
+  public int findDuplicateNum(int[] arr) {
+    int slow = 0, fast = 0;
+    do {
+      slow = arr[slow];
+      fast = arr[arr[fast]];
+    } while (slow != fast);
+    slow = 0;
+    while (slow != fast) {
+      slow = arr[slow];
+      fast = arr[fast];
+    }
+    return slow;
+  }
 }
