@@ -318,4 +318,16 @@ public class Array {
     }
     return arr;
   }
+  
+  public int[] deleteElement(int[] val, int toDelete) {
+    int[] anotherArray = new int[val.length - 1];
+    for (int i = 0, j = 0; i < val.length; i++) {
+      if (!(val[i] == toDelete)) {
+        anotherArray[j] = val[i];
+        ++j;
+      }
+    }
+    return anotherArray;
+  }
+
 }
