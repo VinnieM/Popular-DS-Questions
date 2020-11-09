@@ -318,7 +318,10 @@ public class Array {
     }
     return arr;
   }
-  
+
+  /**
+   * This function is used to delete an element at an index and return a new array.
+   */
   public int[] deleteElement(int[] val, int toDelete) {
     int[] anotherArray = new int[val.length - 1];
     for (int i = 0, j = 0; i < val.length; i++) {
