@@ -85,7 +85,7 @@ public class ArrayTest {
   @Test
   public void testFindDuplicateNumbers() {
     int[] testValue = {3, 6, 8, 10, 2, 1, 3, -3, 9, 2};
-    arrayQuestions.findDuplicatesNumbers(testValue);
+    arrayQuestions.findAllDuplicatesNumbers(testValue);
   }
 
   @Test

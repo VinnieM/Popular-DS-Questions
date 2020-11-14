@@ -160,7 +160,7 @@ public class Array {
    * Cyclically rotate an array n number of times, where n is less than or equal to the size of the
    * array.
    */
-  // 1,2,3,4,5
+
   public int[] cyclicRotationOfArray(int[] arr, int n) {
     int[] arrayToReturn = new int[arr.length];
     int i, j = 0;
@@ -225,9 +225,27 @@ public class Array {
   }
 
   /**
+   * Find the duplicate number in a string where it time should be less than O(n2) and space should
+   * be O(1).
+   */
+  public int findDuplicateNum(int[] arr) {
+    int slow = 0, fast = 0;
+    do {
+      slow = arr[slow];
+      fast = arr[arr[fast]];
+    } while (slow != fast);
+    slow = 0;
+    while (slow != fast) {
+      slow = arr[slow];
+      fast = arr[fast];
+    }
+    return slow;
+  }
+
+  /**
    * Find all the duplicate numbers in an array.
    */
-  public void findDuplicatesNumbers(int[] arr) {
+  public void findAllDuplicatesNumbers(int[] arr) {
     HashMap<Integer, Integer> hashMap = new HashMap<>();
     for (int eachValue : arr) {
       if (hashMap.containsKey(eachValue)) {
@@ -283,24 +301,6 @@ public class Array {
   }
 
   /**
-   * Find the duplicate number in a string where it time should be less than O(n2) and space should
-   * be O(1).
-   */
-  public int findDuplicateNum(int[] arr) {
-    int slow = 0, fast = 0;
-    do {
-      slow = arr[slow];
-      fast = arr[arr[fast]];
-    } while (slow != fast);
-    slow = 0;
-    while (slow != fast) {
-      slow = arr[slow];
-      fast = arr[fast];
-    }
-    return slow;
-  }
-
-  /**
    * Given an array, move all the zeros to the left and other elements to the right in O(n) time and
    * O(1) space.
    */
@@ -317,19 +317,5 @@ public class Array {
       --j;
     }
     return arr;
-  }
-
-  /**
-   * This function is used to delete an element at an index and return a new array.
-   */
-  public int[] deleteElement(int[] val, int toDelete) {
-    int[] anotherArray = new int[val.length - 1];
-    for (int i = 0, j = 0; i < val.length; i++) {
-      if (!(val[i] == toDelete)) {
-        anotherArray[j] = val[i];
-        ++j;
-      }
-    }
-    return anotherArray;
   }
 }
