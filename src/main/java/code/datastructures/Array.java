@@ -24,7 +24,7 @@ public class Array {
    * Get the Max and Min in an Array in O(n) time and O(1) space.
    */
   public int[] getMaxAndMinElement(int[] arr) {
-    int max = Integer.MIN_VALUE, min = Integer.MAX_VALUE;
+    int max = arr[0], min = arr[0];
     for (int i = 0; i < arr.length; i++) {
       if (arr[i] > max) {
         max = arr[i];
