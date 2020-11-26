@@ -132,6 +132,9 @@ public class Array {
     System.out.println(Arrays.toString(arrayToReturn));
   }
 
+  /**
+   * This function sorts an array.
+   */
   private void quickSort(int[] arr, int low, int high) {
     if (low < high) {
       int pivot = getPivot(arr, low, high);
