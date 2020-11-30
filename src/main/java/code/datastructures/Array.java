@@ -1,5 +1,6 @@
 package code.datastructures;
 
+import com.sun.scenario.effect.impl.sw.java.JSWBlend_SRC_OUTPeer;
 import java.util.Arrays;
 import java.util.HashMap;
 
@@ -320,5 +321,29 @@ public class Array {
       --j;
     }
     return arr;
+  }
+
+  /**
+   * Any person in the queue can bribe the person directly in front of them to swap positions. If
+   * two people swap positions, they still wear the same sticker denoting their original places in
+   * line. One person can bribe at most two others.
+   */
+  public void newYearChaos(int[] arr) {
+    boolean isChaos = false;
+    int bribe = 0;
+    for (int i =0; i < arr.length; i++) {
+      if (arr[i] - (i + 1) > 2) {
+        isChaos = true;
+        break;
+      }
+      for (int j = Math.max(0, arr[i] - 2); j < i; j++) {
+        ++bribe;
+      }
+    }
+    if (isChaos) {
+      System.out.println("Too Chaotic");
+    } else {
+      System.out.println(bribe);
+    }
   }
 }
