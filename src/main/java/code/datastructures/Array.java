@@ -1,8 +1,9 @@
 package code.datastructures;
 
-import com.sun.scenario.effect.impl.sw.java.JSWBlend_SRC_OUTPeer;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.HashMap;
+import java.util.Stack;
 
 public class Array {
 
@@ -331,7 +332,7 @@ public class Array {
   public void newYearChaos(int[] arr) {
     boolean isChaos = false;
     int bribe = 0;
-    for (int i =0; i < arr.length; i++) {
+    for (int i = 0; i < arr.length; i++) {
       if (arr[i] - (i + 1) > 2) {
         isChaos = true;
         break;
@@ -345,5 +346,44 @@ public class Array {
     } else {
       System.out.println(bribe);
     }
+  }
+
+  /**
+   * Merge Overlapping intervals.
+   */
+  public void mergeIntervals(Interval[] intervalArray) {
+    if (intervalArray.length < 1) {
+      return;
+    }
+    Arrays.sort(intervalArray, Comparator.comparingInt(o -> o.start));
+    Stack<Interval> stack = new Stack<>();
+    stack.push(intervalArray[0]);
+
+    for (int i = 1; i < intervalArray.length; i++) {
+      Interval eachInterval = stack.peek();
+      if (eachInterval.end > intervalArray[i].start) {
+        eachInterval.end = intervalArray[i].end;
+        stack.pop();
+        stack.push(eachInterval);
+      } else if (eachInterval.end < intervalArray[i].start) {
+        stack.add(intervalArray[i]);
+      }
+    }
+    stack.forEach(System.out::println);
+  }
+}
+
+class Interval {
+
+  int start, end;
+
+  public Interval(int start, int end) {
+    this.start = start;
+    this.end = end;
+  }
+
+  @Override
+  public String toString() {
+    return start + " " + end;
   }
 }
