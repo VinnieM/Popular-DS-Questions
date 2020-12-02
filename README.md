@@ -23,7 +23,14 @@ I have created this repo to learn about Data Structures. I hope this repo will h
 11. Merge 2 sorted arrays without using extra space.
 12. Kadanes Algorithm.
 13. Move all the zero's to the left in O(n) time and and O(1) space.
+14. New Year Chaos - It is New Year's Day and people are in line for the Wonderland rollercoaster ride. Each person wears a sticker indicating their initial position in the queue. Initial positions increment by from at the front of the line to at the back. Any person in the queue can bribe the person directly in front of them to swap positions. If two people swap positions, they still wear the same sticker denoting their original places in line. Fascinated by this chaotic queue, you decide you must know the minimum number of bribes that took place to get the queue into its current state. If anyone has bribed more than two people, the line is too chaotic to compute the answer.
+15. Given an array of intervals where intervals[i] = [starti, endi], merge all overlapping intervals, and return an array of the non-overlapping intervals that cover all the intervals in the input.
 
+### [Recursion](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/Recursion.java)
+
+1. Find the factorial of a number.
+2. Find the sum of the digits of a given number.
+3. Reverse a string.
 
 ## Contribute
 
