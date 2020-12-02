@@ -19,4 +19,10 @@ public class RecursionTest {
     Assert.assertEquals(recursion.sumOfDigits(2), 3);
     Assert.assertEquals(recursion.sumOfDigits(10), 55);
   }
+
+  @Test
+  public void testReverseString() {
+    Assert.assertEquals(recursion.reverseString("Hello World"), "dlroW olleH");
+    Assert.assertEquals(recursion.reverseString("ABC"), "CBA");
+  }
 }

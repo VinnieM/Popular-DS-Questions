@@ -18,4 +18,12 @@ public class Recursion {
   public int sumOfDigits(int number) {
     return number == 0 ? 0 : number + sumOfDigits(number - 1);
   }
+
+  /**
+   * Reverse a string.
+   */
+  public String reverseString(String str) {
+    return str.length() == 0 ? str
+        : str.charAt(str.length() - 1) + reverseString(str.substring(0, str.length() - 1));
+  }
 }
