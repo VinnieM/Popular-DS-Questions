@@ -30,12 +30,19 @@ public class Recursion {
   /**
    * Checks if the String is a palindrome.
    */
-  public boolean isPalindrome(String str, int start, int end) {
+  public boolean isPalindrome(String str) {
+    return isPalindromeRecursive(str, 0, str.length() - 1);
+  }
+
+  /**
+   * Recursive function which does the check.
+   */
+  private boolean isPalindromeRecursive(String str, int start, int end) {
     if (start > end) {
       return true;
     }
     if (str.charAt(start) == str.charAt(end)) {
-      return isPalindrome(str, ++start, --end);
+      return isPalindromeRecursive(str, ++start, --end);
     }
     return false;
   }
