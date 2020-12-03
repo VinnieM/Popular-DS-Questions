@@ -26,4 +26,17 @@ public class Recursion {
     return str.length() == 0 ? str
         : str.charAt(str.length() - 1) + reverseString(str.substring(0, str.length() - 1));
   }
+
+  /**
+   * Checks if the String is a palindrome.
+   */
+  public boolean isPalindrome(String str, int start, int end) {
+    if (start > end) {
+      return true;
+    }
+    if (str.charAt(start) == str.charAt(end)) {
+      return isPalindrome(str, ++start, --end);
+    }
+    return false;
+  }
 }
