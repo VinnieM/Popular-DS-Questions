@@ -25,4 +25,11 @@ public class RecursionTest {
     Assert.assertEquals(recursion.reverseString("Hello World"), "dlroW olleH");
     Assert.assertEquals(recursion.reverseString("ABC"), "CBA");
   }
+
+  @Test
+  public void testPalindrome() {
+    Assert.assertTrue(recursion.isPalindrome("civic"));
+    Assert.assertTrue(recursion.isPalindrome("malayalam"));
+
+  }
 }
