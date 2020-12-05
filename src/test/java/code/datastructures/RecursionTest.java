@@ -30,6 +30,12 @@ public class RecursionTest {
   public void testPalindrome() {
     Assert.assertTrue(recursion.isPalindrome("civic"));
     Assert.assertTrue(recursion.isPalindrome("malayalam"));
+  }
 
+  @Test
+  public void testCheckSubSequenceInString() {
+    Assert.assertTrue(recursion.checkSubSequenceInString("AXY", "ADXCPY"));
+    Assert.assertTrue(recursion.checkSubSequenceInString("gksrek", "geeksforgeeks"));
+    Assert.assertFalse(recursion.checkSubSequenceInString("AXY", "YADXCP"));
   }
 }
