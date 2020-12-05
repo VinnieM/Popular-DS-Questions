@@ -46,4 +46,29 @@ public class Recursion {
     }
     return false;
   }
+
+  /**
+   * Function to check if first string is a subsequence of the second string.
+   */
+  public boolean checkSubSequenceInString(String firstString, String secondString) {
+    return checkSubsequencePalindrome(firstString, secondString, firstString.length() - 1,
+        secondString.length() - 1);
+  }
+
+  /**
+   * Recursive function which checks for subsequence.
+   */
+  private boolean checkSubsequencePalindrome(String firstString, String secondString, int i,
+      int j) {
+    if (i == 0) {
+      return true;
+    }
+    if (j == 0) {
+      return false;
+    }
+    if (firstString.charAt(i) == secondString.charAt(j)) {
+      return checkSubsequencePalindrome(firstString, secondString, --i, --j);
+    }
+    return checkSubsequencePalindrome(firstString, secondString, i, --j);
+  }
 }
