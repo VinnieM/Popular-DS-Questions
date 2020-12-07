@@ -115,4 +115,9 @@ public class ArrayTest {
     int[] expectedValue = {0, 0, 1, 3, 2, 5, 7};
     Assert.assertArrayEquals(arrayQuestions.moveZeroToLeft(testValue), expectedValue);
   }
+
+  @Test
+  public void testPrintPowerSet() {
+    arrayQuestions.printPowerSet("ABC");
+  }
 }
