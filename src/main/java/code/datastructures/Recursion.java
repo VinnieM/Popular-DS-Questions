@@ -1,5 +1,7 @@
 package code.datastructures;
 
+import java.util.Arrays;
+
 /**
  * This class contains recursive problems
  */
@@ -70,5 +72,22 @@ public class Recursion {
       return checkSubsequencePalindrome(firstString, secondString, --i, --j);
     }
     return checkSubsequencePalindrome(firstString, secondString, i, --j);
+  }
+
+  public void printAllPermutations(int[] arr, int startIndex, int endIndex) {
+    if (startIndex == endIndex) {
+      System.out.println(Arrays.toString(arr));
+    }
+    for (int i = startIndex; i <= endIndex; i++) {
+      swapIntArray(startIndex, i, arr);
+      printAllPermutations(arr, startIndex + 1, endIndex);
+      swapIntArray(startIndex, i, arr);
+    }
+  }
+
+  public void swapIntArray(int i, int j, int[] arr) {
+    int temp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = temp;
   }
 }

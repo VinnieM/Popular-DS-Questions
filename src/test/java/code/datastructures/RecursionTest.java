@@ -38,4 +38,10 @@ public class RecursionTest {
     Assert.assertTrue(recursion.checkSubSequenceInString("gksrek", "geeksforgeeks"));
     Assert.assertFalse(recursion.checkSubSequenceInString("AXY", "YADXCP"));
   }
+
+  @Test
+  public void testPrintAllPermutations() {
+    int[] x = {1, 2, 3};
+    recursion.printAllPermutations(x, 0, 2);
+  }
 }
