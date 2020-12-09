@@ -381,6 +381,9 @@ public class Array {
   }
 }
 
+/**
+ * Creating Interval class for Merge Intervals problem.
+ */
 class Interval {
 
   int start, end;
