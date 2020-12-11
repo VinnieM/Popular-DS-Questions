@@ -1,5 +1,6 @@
 package code.datastructures;
 
+import code.datastructures.recursion.FindFactorial;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -9,9 +10,10 @@ public class RecursionTest {
 
   @Test
   public void testFactorial() {
-    Assert.assertEquals(recursion.factorial(3), 6);
-    Assert.assertEquals(recursion.factorial(0), 1);
-    Assert.assertEquals(recursion.factorial(4), 24);
+    final FindFactorial factorial = new FindFactorial();
+    Assert.assertEquals(factorial.factorial(3), 6);
+    Assert.assertEquals(factorial.factorial(0), 1);
+    Assert.assertEquals(factorial.factorial(4), 24);
   }
 
   @Test
