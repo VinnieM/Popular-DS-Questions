@@ -2,6 +2,7 @@ package code.datastructures;
 
 import code.datastructures.recursion.FindFactorial;
 import code.datastructures.recursion.FindSumOfDigits;
+import code.datastructures.recursion.ReverseString;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -26,8 +27,9 @@ public class RecursionTest {
 
   @Test
   public void testReverseString() {
-    Assert.assertEquals(recursion.reverseString("Hello World"), "dlroW olleH");
-    Assert.assertEquals(recursion.reverseString("ABC"), "CBA");
+    final ReverseString reverseString = new ReverseString();
+    Assert.assertEquals(reverseString.reverse("Hello World"), "dlroW olleH");
+    Assert.assertEquals(reverseString.reverse("ABC"), "CBA");
   }
 
   @Test
