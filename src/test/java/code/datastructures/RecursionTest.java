@@ -1,6 +1,7 @@
 package code.datastructures;
 
 import code.datastructures.recursion.FindFactorial;
+import code.datastructures.recursion.FindSumOfDigits;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -18,8 +19,9 @@ public class RecursionTest {
 
   @Test
   public void testSumOfDigits() {
-    Assert.assertEquals(recursion.sumOfDigits(2), 3);
-    Assert.assertEquals(recursion.sumOfDigits(10), 55);
+    final FindSumOfDigits sumOfDigits = new FindSumOfDigits();
+    Assert.assertEquals(sumOfDigits.sumOfDigits(2), 3);
+    Assert.assertEquals(sumOfDigits.sumOfDigits(10), 55);
   }
 
   @Test
