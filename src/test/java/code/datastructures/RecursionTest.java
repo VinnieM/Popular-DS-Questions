@@ -1,5 +1,6 @@
 package code.datastructures;
 
+import code.datastructures.recursion.CheckSubsequence;
 import code.datastructures.recursion.FindFactorial;
 import code.datastructures.recursion.FindSumOfDigits;
 import code.datastructures.recursion.Palindrome;
@@ -42,9 +43,10 @@ public class RecursionTest {
 
   @Test
   public void testCheckSubSequenceInString() {
-    Assert.assertTrue(recursion.checkSubSequenceInString("AXY", "ADXCPY"));
-    Assert.assertTrue(recursion.checkSubSequenceInString("gksrek", "geeksforgeeks"));
-    Assert.assertFalse(recursion.checkSubSequenceInString("AXY", "YADXCP"));
+    final CheckSubsequence subsequence = new CheckSubsequence();
+    Assert.assertTrue(subsequence.subSequenceForStrings("AXY", "ADXCPY"));
+    Assert.assertTrue(subsequence.subSequenceForStrings("gksrek", "geeksforgeeks"));
+    Assert.assertFalse(subsequence.subSequenceForStrings("AXY", "YADXCP"));
   }
 
   @Test
