@@ -2,6 +2,7 @@ package code.datastructures;
 
 import code.datastructures.recursion.FindFactorial;
 import code.datastructures.recursion.FindSumOfDigits;
+import code.datastructures.recursion.Palindrome;
 import code.datastructures.recursion.ReverseString;
 import org.junit.Assert;
 import org.junit.Test;
@@ -34,8 +35,9 @@ public class RecursionTest {
 
   @Test
   public void testPalindrome() {
-    Assert.assertTrue(recursion.isPalindrome("civic"));
-    Assert.assertTrue(recursion.isPalindrome("malayalam"));
+    final Palindrome palindrome = new Palindrome();
+    Assert.assertTrue(palindrome.isPalindrome("civic"));
+    Assert.assertTrue(palindrome.isPalindrome("malayalam"));
   }
 
   @Test
