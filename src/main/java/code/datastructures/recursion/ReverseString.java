@@ -4,6 +4,7 @@ public class ReverseString {
 
   /**
    * This function reverses a String.
+   * Level - Easy
    */
   public String reverse(String str) {
     return str.length() == 0 ? str

@@ -2,6 +2,10 @@ package code.datastructures.recursion;
 
 public class Palindrome {
 
+  /**
+   * This function checks if the given string is a palindrome.
+   * Level - Easy
+   */
   public boolean isPalindrome(String str) {
     return palindromeRecursive(str, 0, str.length() - 1);
   }
