@@ -1,5 +1,6 @@
 package code.datastructures;
 
+import code.datastructures.Arrays.ReverseArray;
 import code.utils.TestData;
 import org.junit.Assert;
 import org.junit.Test;
@@ -10,7 +11,8 @@ public class ArrayTest {
 
   @Test
   public void testReverseArray() {
-    int[] reversedArray = arrayQuestions.reverseArray(TestData.smallArray);
+    ReverseArray reverseArray = new ReverseArray();
+    int[] reversedArray = reverseArray.reverseArray(TestData.smallArray);
     Assert.assertArrayEquals(TestData.smallArrayReversed, reversedArray);
   }
 
