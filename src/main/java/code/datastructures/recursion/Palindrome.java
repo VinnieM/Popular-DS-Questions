@@ -10,7 +10,7 @@ public class Palindrome {
     return palindromeRecursive(str, 0, str.length() - 1);
   }
 
-  public boolean palindromeRecursive(String str, int start, int end) {
+  private boolean palindromeRecursive(String str, int start, int end) {
     if (start > end) {
       return true;
     } else if (str.charAt(start) == str.charAt(end)) {
