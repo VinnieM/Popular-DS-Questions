@@ -372,6 +372,9 @@ public class Array {
     stack.forEach(System.out::println);
   }
 
+  /**
+   * Program to print the power set of a given string.
+   */
   public void printPowerSet(String arg) {
     for (int i = 0; i < arg.length(); i++) {
       for (int j = i; j < arg.length(); j++) {
