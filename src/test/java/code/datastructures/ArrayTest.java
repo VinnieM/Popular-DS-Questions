@@ -1,6 +1,6 @@
 package code.datastructures;
 
-import code.datastructures.Arrays.ReverseArray;
+import code.datastructures.arrays.ReverseArray;
 import code.utils.TestData;
 import org.junit.Assert;
 import org.junit.Test;

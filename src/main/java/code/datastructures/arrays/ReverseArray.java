@@ -1,4 +1,4 @@
-package code.datastructures.Arrays;
+package code.datastructures.arrays;
 
 public class ReverseArray {
 
