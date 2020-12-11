@@ -5,6 +5,7 @@ public class CheckSubsequence {
   /**
    * This function checks if the first string is a subsequence of the second one. E.G. hac is a
    * subsequence of cathartic, but bat is not a subsequence of table.
+   * Level - Easy
    */
   public boolean subSequenceForStrings(String firstString, String secondString) {
     return subSequenceRecursion(firstString, secondString, firstString.length() - 1,
