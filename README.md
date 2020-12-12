@@ -1,7 +1,7 @@
 # Popular Data Structure and Algorithms.
 
-This repo contains a collection of ***Algorithms*** and ***Data Structures*** . 
-The implementation is in Java. This repo contains a list of questions and answers which are commonly asked during interviews. Most of the solutions have test cases which checks their validity. The time and space complexity for each solution is also mentioned.
+This repo contains a collection of common ***Algorithms*** and ***Data Structures*** questions. 
+The implementation is in Java. The questions mentioned below, or a variation of the questions are common for coding interviews. Most of the solutions have test cases which checks their validity. The time and space complexity for each solution is also mentioned.
 
 ## Problems
 
