@@ -7,7 +7,7 @@ The implementation is in Java. This repo contains a list of questions and answer
 
 ### Arrays
 Level - Easy
-1. Reverse an array without using extra space.
+1. [Reverse an array without using extra space.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/arrays/ReverseArray.java)
 2. Get the minimum and maximum element in an array.
 3. Get the nth smallest element in an array in O(n) time.
 4. Sort an array which contains only 0, 1 and 2 in O(n) time and O(1) space.
