@@ -2,6 +2,7 @@ package code.datastructures;
 
 import code.datastructures.arrays.MaxAndSecondMax;
 import code.datastructures.arrays.MaxMinElement;
+import code.datastructures.arrays.NthSmallestElement;
 import code.datastructures.arrays.ReverseArray;
 import code.utils.TestData;
 import org.junit.Assert;
@@ -40,16 +41,17 @@ public class ArrayTest {
 
   @Test
   public void testNthSmallest() {
-    int returnValue = arrayQuestions
-        .getNthSmallest(TestData.randomNumbers, 0, TestData.randomNumbers.length - 1, 39);
+    final NthSmallestElement smallestElement = new NthSmallestElement();
+    int returnValue = smallestElement
+        .findTheNthSmallestElement(TestData.randomNumbers, 39, 0, TestData.randomNumbers.length - 1);
     Assert.assertEquals(returnValue, -310);
 
-    returnValue = arrayQuestions
-        .getNthSmallest(TestData.randomNumbers, 0, TestData.randomNumbers.length - 1, 21);
+    returnValue = smallestElement
+        .findTheNthSmallestElement(TestData.randomNumbers,21,0, TestData.randomNumbers.length - 1);
     Assert.assertEquals(returnValue, -372);
 
-    returnValue = arrayQuestions
-        .getNthSmallest(TestData.randomNumbers, 0, TestData.randomNumbers.length - 1, 115);
+    returnValue = smallestElement
+        .findTheNthSmallestElement(TestData.randomNumbers, 115,0, TestData.randomNumbers.length - 1);
     Assert.assertEquals(returnValue, 41);
   }
 
