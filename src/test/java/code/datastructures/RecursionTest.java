@@ -4,13 +4,12 @@ import code.datastructures.recursion.CheckSubsequence;
 import code.datastructures.recursion.FindFactorial;
 import code.datastructures.recursion.FindSumOfDigits;
 import code.datastructures.recursion.Palindrome;
+import code.datastructures.recursion.Permutations;
 import code.datastructures.recursion.ReverseString;
 import org.junit.Assert;
 import org.junit.Test;
 
 public class RecursionTest {
-
-  private final Recursion recursion = new Recursion();
 
   @Test
   public void testFactorial() {
@@ -51,7 +50,8 @@ public class RecursionTest {
 
   @Test
   public void testPrintAllPermutations() {
+    final Permutations permutations = new Permutations();
     int[] x = {1, 2, 3};
-    recursion.printAllPermutations(x, 0, 2);
+    permutations.printAllPermutations(x, 0, 2);
   }
 }
