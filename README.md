@@ -6,13 +6,12 @@ The implementation is in Java. This repo contains a list of questions and answer
 ## Problems
 
 ### Arrays
-Level - Easy
+Easy
 1. [Reverse an array without using extra space.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/arrays/ReverseArray.java)
 2. [Get the minimum and maximum element in an array.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/arrays/MaxMinElement.java)
 3. [Find the Max and Second Max element in an array.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/arrays/MaxAndSecondMax.java)
 
-Level - Medium
-
+Medium
 4. [Get the nth smallest element in an array in O(n) time.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/arrays/NthSmallestElement.java)
 5. Sort an array which contains only 0, 1 and 2 in O(n) time and O(1) space.
 6. Move negative elements to the left of the array in O(n) time.
@@ -28,13 +27,14 @@ Level - Medium
 16. Given an array of intervals where intervals[i] = [starti, endi], merge all overlapping intervals, and return an array of the non-overlapping intervals that cover all the intervals in the input.
 
 ### Recursion
-Level - Easy
+Easy
 1. [Find the factorial of a number.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/recursion/FindFactorial.java)
 2. [Find the sum of the digits of a given number.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/recursion/FindSumOfDigits.java)
 3. [Reverse a string.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/recursion/ReverseString.java)
 4. [Check if a string is a palindrome.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/recursion/Palindrome.java)
 5. [Find the subsequence of two strings](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/recursion/CheckSubsequence.java)
-Level - Medium/Enumeration
+
+Medium/Enumeration
 6. [Find all unique permutations in an array](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/recursion/Permutations.java)
 
 ## Contribute
