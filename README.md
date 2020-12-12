@@ -30,6 +30,7 @@ Level - Easy
 3. [Reverse a string.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/recursion/ReverseString.java)
 4. [Check if a string is a palindrome.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/recursion/Palindrome.java)
 5. [Find the subsequence of two strings](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/recursion/CheckSubsequence.java)
+6. [Find all unique permutations in an array](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/recursion/Permutations.java)
 
 ## Contribute
 
