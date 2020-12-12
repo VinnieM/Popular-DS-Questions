@@ -12,6 +12,7 @@ Easy
 3. [Find the Max and Second Max element in an array.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/arrays/MaxAndSecondMax.java)
 
 Medium
+
 4. [Get the nth smallest element in an array in O(n) time.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/arrays/NthSmallestElement.java)
 5. Sort an array which contains only 0, 1 and 2 in O(n) time and O(1) space.
 6. Move negative elements to the left of the array in O(n) time.
@@ -35,6 +36,7 @@ Easy
 5. [Find the subsequence of two strings](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/recursion/CheckSubsequence.java)
 
 Medium/Enumeration
+
 6. [Find all unique permutations in an array](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/recursion/Permutations.java)
 
 ## Contribute
