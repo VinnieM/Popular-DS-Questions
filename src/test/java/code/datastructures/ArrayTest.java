@@ -1,5 +1,7 @@
 package code.datastructures;
 
+import code.datastructures.arrays.MaxAndSecondMax;
+import code.datastructures.arrays.MaxMinElement;
 import code.datastructures.arrays.ReverseArray;
 import code.utils.TestData;
 import org.junit.Assert;
@@ -11,18 +13,29 @@ public class ArrayTest {
 
   @Test
   public void testReverseArray() {
-    ReverseArray reverseArray = new ReverseArray();
+    final ReverseArray reverseArray = new ReverseArray();
     int[] reversedArray = reverseArray.reverseArray(TestData.smallArray);
     Assert.assertArrayEquals(TestData.smallArrayReversed, reversedArray);
   }
 
   @Test
   public void testGetMaxAndMinValue() {
-    int[] returnValue = arrayQuestions.getMaxAndMinElement(TestData.largeArrayUnsorted);
+    final MaxMinElement maxMinElement = new MaxMinElement();
+    int[] returnValue = maxMinElement.getMaxAndMinElement(TestData.largeArrayUnsorted);
     Assert.assertArrayEquals(new int[]{100, 1}, returnValue);
 
-    returnValue = arrayQuestions.getMaxAndMinElement(TestData.mediumArrayUnsorted);
+    returnValue = maxMinElement.getMaxAndMinElement(TestData.mediumArrayUnsorted);
     Assert.assertArrayEquals(new int[]{50, 1}, returnValue);
+  }
+
+  @Test
+  public void testMaxAndSecondMax() {
+    final MaxAndSecondMax maxAndSecondMax = new MaxAndSecondMax();
+    int[] returnValue = maxAndSecondMax.getMaxAndSecondMax(TestData.largeArrayUnsorted);
+    Assert.assertArrayEquals(new int[]{100, 99}, returnValue);
+
+    returnValue = maxAndSecondMax.getMaxAndSecondMax(TestData.mediumArrayUnsorted);
+    Assert.assertArrayEquals(new int[]{50, 49}, returnValue);
   }
 
   @Test
