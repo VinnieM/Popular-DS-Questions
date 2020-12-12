@@ -1,15 +1,12 @@
 # Popular Data Structure and Algorithms.
 
-This repo contains a collections of ***Algorithms*** and ***Data Structures*** questions which are usually asked for FAANG interviews. 
-
-The implementaiton is done using Java. This repo contains the solutions for the most common Interview and Data structure questions which are asked in interviews. Most of the solutions have test cases which checks their validity. The Time and Space complexity for each solution is also mentioned.
-
-I have created this repo to learn about Data Structures. I hope this repo will help others who are trying to learn DS.
+This repo contains a collection of ***Algorithms*** and ***Data Structures*** . 
+The implementation is in Java. This repo contains a list of questions and answers which are commonly asked during interviews. Most of the solutions have test cases which checks their validity. The time and space complexity for each solution is also mentioned.
 
 ## Problems
 
 ### Arrays
-
+Level - Easy
 1. Reverse an array without using extra space.
 2. Get the minimum and maximum element in an array.
 3. Get the nth smallest element in an array in O(n) time.
@@ -27,7 +24,7 @@ I have created this repo to learn about Data Structures. I hope this repo will h
 15. Given an array of intervals where intervals[i] = [starti, endi], merge all overlapping intervals, and return an array of the non-overlapping intervals that cover all the intervals in the input.
 
 ### Recursion
-
+Level - Easy
 1. [Find the factorial of a number.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/recursion/FindFactorial.java)
 2. [Find the sum of the digits of a given number.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/recursion/FindSumOfDigits.java)
 3. [Reverse a string.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/recursion/ReverseString.java)
@@ -36,4 +33,4 @@ I have created this repo to learn about Data Structures. I hope this repo will h
 
 ## Contribute
 
-If you find a bug or a better way to implement, please raise a pull request.
+If you find a bug, or a better way to implement, please raise a pull request.
