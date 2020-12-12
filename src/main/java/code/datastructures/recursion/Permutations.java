@@ -6,6 +6,7 @@ public class Permutations {
 
   /**
    * Given an array, this function prints all possible unique permutations.
+   * Level - Medium/Enumeration
    */
   public void printAllPermutations(int[] arr, int start, int end) {
     if (start == end) {
