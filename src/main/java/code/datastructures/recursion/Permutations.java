@@ -5,14 +5,14 @@ import java.util.Arrays;
 public class Permutations {
 
   /**
-   * Given an array, print all possible unique permutations.
+   * Given an array, this function prints all possible unique permutations.
    */
   public void printAllPermutations(int[] arr, int start, int end) {
     if (start == end) {
       System.out.println(Arrays.toString(arr));
     } else {
       for (int i = start; i <= end; i++) {
-        swap(start, i , arr);
+        swap(start, i, arr);
         printAllPermutations(arr, start + 1, end);
         swap(start, i, arr);
       }
