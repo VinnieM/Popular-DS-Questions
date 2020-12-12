@@ -8,7 +8,7 @@ I have created this repo to learn about Data Structures. I hope this repo will h
 
 ## Problems
 
-### [Arrays](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/Array.java)
+### Arrays
 
 1. Reverse an array without using extra space.
 2. Get the minimum and maximum element in an array.
@@ -26,11 +26,13 @@ I have created this repo to learn about Data Structures. I hope this repo will h
 14. New Year Chaos - It is New Year's Day and people are in line for the Wonderland rollercoaster ride. Each person wears a sticker indicating their initial position in the queue. Initial positions increment by from at the front of the line to at the back. Any person in the queue can bribe the person directly in front of them to swap positions. If two people swap positions, they still wear the same sticker denoting their original places in line. Fascinated by this chaotic queue, you decide you must know the minimum number of bribes that took place to get the queue into its current state. If anyone has bribed more than two people, the line is too chaotic to compute the answer.
 15. Given an array of intervals where intervals[i] = [starti, endi], merge all overlapping intervals, and return an array of the non-overlapping intervals that cover all the intervals in the input.
 
-### [Recursion](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/Recursion.java)
+### Recursion
 
-1. Find the factorial of a number.
-2. Find the sum of the digits of a given number.
-3. Reverse a string.
+1. [Find the factorial of a number.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/recursion/FindFactorial.java)
+2. [Find the sum of the digits of a given number.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/recursion/FindSumOfDigits.java)
+3. [Reverse a string.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/recursion/ReverseString.java)
+4. [Check if a string is a palindrome.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/recursion/Palindrome.java)
+5. [Find the subsequence of two strings](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/recursion/CheckSubsequence.java)
 
 ## Contribute
 
