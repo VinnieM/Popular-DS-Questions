@@ -4,7 +4,9 @@ import code.datastructures.arrays.MaxAndSecondMax;
 import code.datastructures.arrays.MaxMinElement;
 import code.datastructures.arrays.NthSmallestElement;
 import code.datastructures.arrays.ReverseArray;
+import code.datastructures.arrays.SortCustomArray;
 import code.utils.TestData;
+import java.util.Arrays;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -57,8 +59,10 @@ public class ArrayTest {
 
   @Test
   public void testSortArrayOfZeroOneAndTwo() {
+    final SortCustomArray customArray = new SortCustomArray();
     int[] temp = {0, 0, 0, 0, 1, 1, 2, 2};
-    int[] returnValue = arrayQuestions.sortArrayOfZeroOneAndTwo(new int[]{0, 2, 1, 0, 2, 0, 1, 0});
+    int[] returnValue = customArray.sortCustomArray(new int[]{0, 2, 1, 0, 2, 0, 1, 0});
+    System.out.println(Arrays.toString(returnValue));
     Assert.assertArrayEquals(temp, returnValue);
   }
 
