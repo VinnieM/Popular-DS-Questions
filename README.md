@@ -15,7 +15,7 @@ Medium
 
 5. [Get the nth smallest element in an array in O(n) time.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/arrays/NthSmallestElement.java)
 6. [Sort an array which contains only 0, 1 and 2 in O(n) time and O(1) space.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/arrays/SortCustomArray.java)
-7. Get the Union of 2 arrays.
+7. [Merge 2 sorted arrays.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/arrays/ArrayUnion.java)
 8. Rotate and array N number of times in O(n) time.
 9. Find the largest subarray in O(n) time.
 10. Find all duplicate numbers in an array.
