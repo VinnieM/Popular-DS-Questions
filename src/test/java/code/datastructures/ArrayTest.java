@@ -1,5 +1,6 @@
 package code.datastructures;
 
+import code.datastructures.arrays.ArrayUnion;
 import code.datastructures.arrays.MaxAndSecondMax;
 import code.datastructures.arrays.MaxMinElement;
 import code.datastructures.arrays.NegativeElements;
@@ -46,15 +47,18 @@ public class ArrayTest {
   public void testNthSmallest() {
     final NthSmallestElement smallestElement = new NthSmallestElement();
     int returnValue = smallestElement
-        .findTheNthSmallestElement(TestData.randomNumbers, 39, 0, TestData.randomNumbers.length - 1);
+        .findTheNthSmallestElement(TestData.randomNumbers, 39, 0,
+            TestData.randomNumbers.length - 1);
     Assert.assertEquals(returnValue, -310);
 
     returnValue = smallestElement
-        .findTheNthSmallestElement(TestData.randomNumbers,21,0, TestData.randomNumbers.length - 1);
+        .findTheNthSmallestElement(TestData.randomNumbers, 21, 0,
+            TestData.randomNumbers.length - 1);
     Assert.assertEquals(returnValue, -372);
 
     returnValue = smallestElement
-        .findTheNthSmallestElement(TestData.randomNumbers, 115,0, TestData.randomNumbers.length - 1);
+        .findTheNthSmallestElement(TestData.randomNumbers, 115, 0,
+            TestData.randomNumbers.length - 1);
     Assert.assertEquals(returnValue, 41);
   }
 
@@ -76,7 +80,9 @@ public class ArrayTest {
 
   @Test
   public void testFindUnionOfArrays() {
-    arrayQuestions.UnionOfTwoArrays(TestData.tinyArrayUnsorted, TestData.tinyArrayUnsorted);
+    final ArrayUnion union = new ArrayUnion();
+    int[] expectedValue = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    Assert.assertArrayEquals(expectedValue, union.mergeSortedArrays(TestData.tinyArray, TestData.tinyArray2));
   }
 
   @Test
