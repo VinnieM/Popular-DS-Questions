@@ -14,19 +14,6 @@ public class Array {
   }
 
   /**
-   * Program to move all the negative elements to the left and positive elements to the right.
-   */
-  public void moveNegativeElementsToLeft(int[] arr) {
-    int j = 0;
-    for (int i = 0; i < arr.length; i++) {
-      if (arr[i] < 0) {
-        swap(arr, i, j);
-        ++j;
-      }
-    }
-  }
-
-  /**
    * Program to find the union of 2 sorted arrays.
    */
   public void UnionOfTwoArrays(int[] array1, int[] array2) {
