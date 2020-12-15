@@ -2,6 +2,10 @@ package code.datastructures.arrays;
 
 public class RotateArray {
 
+  /**
+   * Rotate an array n number of times and return the rotated array. Time complexity O(n) space complexity is O(n).
+   * Level - Easy.
+   */
   public int[] cyclicRotation(int[] arr, int numberOfRotations) {
     int j = 0;
     int[] returnValue = new int[arr.length];
