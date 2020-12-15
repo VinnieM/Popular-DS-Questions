@@ -2,6 +2,7 @@ package code.datastructures;
 
 import code.datastructures.arrays.MaxAndSecondMax;
 import code.datastructures.arrays.MaxMinElement;
+import code.datastructures.arrays.NegativeElements;
 import code.datastructures.arrays.NthSmallestElement;
 import code.datastructures.arrays.ReverseArray;
 import code.datastructures.arrays.SortCustomArray;
@@ -68,7 +69,9 @@ public class ArrayTest {
 
   @Test
   public void testMoveNegativeElementsToLeft() {
-    arrayQuestions.moveNegativeElementsToLeft(TestData.randomNumbers);
+    final NegativeElements negativeElements = new NegativeElements();
+    negativeElements.moveNegativeElementsToLeft(TestData.randomNumbers);
+    System.out.println(Arrays.toString(TestData.randomNumbers));
   }
 
   @Test
