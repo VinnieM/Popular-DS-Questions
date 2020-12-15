@@ -10,12 +10,11 @@ Easy
 1. [Reverse an array without using extra space.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/arrays/ReverseArray.java)
 2. [Get the minimum and maximum element in an array.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/arrays/MaxMinElement.java)
 3. [Find the Max and Second Max element in an array.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/arrays/MaxAndSecondMax.java)
-
+4. [Move negative elements to the left of the array.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/arrays/NegativeElements.java)
 Medium
 
-4. [Get the nth smallest element in an array in O(n) time.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/arrays/NthSmallestElement.java)
-5. [Sort an array which contains only 0, 1 and 2 in O(n) time and O(1) space.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/arrays/SortCustomArray.java)
-6. Move negative elements to the left of the array in O(n) time.
+5. [Get the nth smallest element in an array in O(n) time.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/arrays/NthSmallestElement.java)
+6. [Sort an array which contains only 0, 1 and 2 in O(n) time and O(1) space.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/arrays/SortCustomArray.java)
 7. Get the Union of 2 arrays.
 8. Rotate and array N number of times in O(n) time.
 9. Find the largest subarray in O(n) time.
@@ -34,7 +33,6 @@ Easy
 3. [Reverse a string.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/recursion/ReverseString.java)
 4. [Check if a string is a palindrome.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/recursion/Palindrome.java)
 5. [Find the subsequence of two strings](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/recursion/CheckSubsequence.java)
-
 Medium/Enumeration
 
 6. [Find all unique permutations in an array](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/recursion/Permutations.java)
