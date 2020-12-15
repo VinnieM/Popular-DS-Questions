@@ -6,6 +6,7 @@ import code.datastructures.arrays.MaxMinElement;
 import code.datastructures.arrays.NegativeElements;
 import code.datastructures.arrays.NthSmallestElement;
 import code.datastructures.arrays.ReverseArray;
+import code.datastructures.arrays.RotateArray;
 import code.datastructures.arrays.SortCustomArray;
 import code.utils.TestData;
 import java.util.Arrays;
@@ -87,13 +88,14 @@ public class ArrayTest {
 
   @Test
   public void testCyclicRotationOfArray() {
+    final RotateArray rotate = new RotateArray();
     int[] testValue1 = {3, 4, 5, 1, 2};
     int[] testValue2 = {5, 1, 2, 3, 4};
 
     Assert.assertArrayEquals(testValue1,
-        arrayQuestions.cyclicRotationOfArray(TestData.tinyArray, 2));
+        rotate.cyclicRotation(TestData.tinyArray, 2));
     Assert.assertArrayEquals(testValue2,
-        arrayQuestions.cyclicRotationOfArray(TestData.tinyArray, 4));
+        rotate.cyclicRotation(TestData.tinyArray, 4));
   }
 
   @Test
