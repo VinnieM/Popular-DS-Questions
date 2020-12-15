@@ -7,40 +7,6 @@ import java.util.Stack;
 
 public class Array {
 
-  private void swap(int[] arr, int i, int j) {
-    int temp = arr[i];
-    arr[i] = arr[j];
-    arr[j] = temp;
-  }
-
-  /**
-   * Program to find the union of 2 sorted arrays.
-   */
-  public void UnionOfTwoArrays(int[] array1, int[] array2) {
-    int[] arrayToReturn = new int[array1.length + array2.length];
-    int i = 0, j = 0, k = 0,
-        array1Length = array1.length, array2Length = array2.length;
-    quickSort(array1, 0, array1.length - 1);
-    quickSort(array2, 0, array2.length - 1);
-    while (i < array1Length && j < array2Length) {
-      if (array1[i] < array2[j]) {
-        arrayToReturn[k++] = array1[i++];
-      } else if (array1[i] > array2[j]) {
-        arrayToReturn[k++] = array2[j++];
-      } else if (array1[i] == array2[j]) {
-        arrayToReturn[k++] = array1[i++];
-        ++j;
-      }
-    }
-    while (i < array1Length) {
-      arrayToReturn[k++] = array1[i++];
-    }
-    while (j < array2Length) {
-      arrayToReturn[k++] = array2[j++];
-    }
-    System.out.println(Arrays.toString(arrayToReturn));
-  }
-
   /**
    * This function sorts an array.
    */
