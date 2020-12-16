@@ -35,23 +35,6 @@ public class Array {
   }
 
   /**
-   * Cyclically rotate an array n number of times, where n is less than or equal to the size of the
-   * array.
-   */
-
-  public int[] cyclicRotationOfArray(int[] arr, int n) {
-    int[] arrayToReturn = new int[arr.length];
-    int i, j = 0;
-    for (i = n; i < arr.length; i++, j++) {
-      arrayToReturn[j] = arr[i];
-    }
-    for (i = 0; i < n; i++, j++) {
-      arrayToReturn[j] = arr[i];
-    }
-    return arrayToReturn;
-  }
-
-  /**
    * Program to find the largest subarry.
    */
   public int largestSubArray(int[] arr) {
