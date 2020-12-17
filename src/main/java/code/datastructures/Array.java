@@ -8,33 +8,6 @@ import java.util.Stack;
 public class Array {
 
   /**
-   * This function sorts an array.
-   */
-  private void quickSort(int[] arr, int low, int high) {
-    if (low < high) {
-      int pivot = getPivot(arr, low, high);
-      quickSort(arr, low, pivot - 1);
-      quickSort(arr, pivot + 1, high);
-    }
-  }
-
-  private int getPivot(int[] arr, int low, int high) {
-    int pivot = arr[high], j = low;
-    for (int i = low; i < high; i++) {
-      if (arr[i] < pivot) {
-        int temp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = temp;
-        ++j;
-      }
-    }
-    int temp = arr[j];
-    arr[j] = arr[high];
-    arr[high] = temp;
-    return j;
-  }
-
-  /**
    * Minimum number of jumps.
    */
   public int minimumNumberOfJumps(int[] arr) {
@@ -53,23 +26,6 @@ public class Array {
     }
   }
 
-  /**
-   * Find the duplicate number in a string where it time should be less than O(n2) and space should
-   * be O(1).
-   */
-  public int findDuplicateNum(int[] arr) {
-    int slow = 0, fast = 0;
-    do {
-      slow = arr[slow];
-      fast = arr[arr[fast]];
-    } while (slow != fast);
-    slow = 0;
-    while (slow != fast) {
-      slow = arr[slow];
-      fast = arr[fast];
-    }
-    return slow;
-  }
 
   /**
    * Find all the duplicate numbers in an array.
