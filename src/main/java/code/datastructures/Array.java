@@ -35,19 +35,6 @@ public class Array {
   }
 
   /**
-   * Program to find the largest subarry.
-   */
-  public int largestSubArray(int[] arr) {
-    int maxValue = arr[0];
-    int currentMax = arr[0];
-    for (int i = 1; i < arr.length; i++) {
-      currentMax = Math.max(currentMax + arr[i], arr[i]);
-      maxValue = Math.max(maxValue, currentMax);
-    }
-    return maxValue;
-  }
-
-  /**
    * Minimum number of jumps.
    */
   public int minimumNumberOfJumps(int[] arr) {
@@ -63,25 +50,6 @@ public class Array {
       i = i + value;
       ++totalJumps;
       currentLength -= i;
-    }
-  }
-
-  /**
-   * Find the duplicate number in an array where only one number is duplicated.
-   */
-  public int findDuplicateNumber(int[] arr) {
-    if (arr.length > 1) {
-      quickSort(arr, 0, arr.length - 1);
-      int previous = 0;
-      for (int i = 1; i < arr.length; i++) {
-        if (arr[i] == arr[previous]) {
-          return arr[i];
-        }
-        ++previous;
-      }
-      return -1;
-    } else {
-      return arr[0];
     }
   }
 
