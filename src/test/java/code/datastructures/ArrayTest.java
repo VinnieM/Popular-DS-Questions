@@ -139,13 +139,6 @@ public class ArrayTest {
   }
 
   @Test
-  public void testMerge() {
-    int[] testValue = {1, 3, 5, 7};
-    int[] testValue2 = {0, 2, 6, 8, 9};
-    arrayQuestions.merge(testValue, testValue2);
-  }
-
-  @Test
   public void testKadanesAlgorithm() {
     int[] testValue = {1, 2, 3, -2, 5};
     int[] testValue2 = {-1, -2, -3, -4};
