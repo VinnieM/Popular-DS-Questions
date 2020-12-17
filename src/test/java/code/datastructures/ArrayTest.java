@@ -1,6 +1,7 @@
 package code.datastructures;
 
 import code.datastructures.arrays.ArrayUnion;
+import code.datastructures.arrays.DuplicateNumber;
 import code.datastructures.arrays.LargestSum;
 import code.datastructures.arrays.MaxAndSecondMax;
 import code.datastructures.arrays.MaxMinElement;
@@ -111,12 +112,25 @@ public class ArrayTest {
 
   @Test
   public void testFindDuplicateNumber() {
+    final DuplicateNumber duplicate = new DuplicateNumber();
     int[] testValue = {3, 6, 8, 10, 2, 1, 3, -3, 9};
     int[] testValue1 = {1, 1};
     int[] testValue2 = {1, 1, 2};
-    Assert.assertEquals(arrayQuestions.findDuplicateNumber(testValue), 3);
-    Assert.assertEquals(arrayQuestions.findDuplicateNumber(testValue1), 1);
-    Assert.assertEquals(arrayQuestions.findDuplicateNumber(testValue2), 1);
+    int[] testValue3 = {1, 2, 3};
+    Assert.assertEquals(duplicate.findDuplicateNumbers(testValue), 3);
+    Assert.assertEquals(duplicate.findDuplicateNumbers(testValue1), 1);
+    Assert.assertEquals(duplicate.findDuplicateNumbers(testValue2), 1);
+    Assert.assertEquals(duplicate.findDuplicateNumbers(testValue3), -1);
+
+    Assert.assertEquals(duplicate.findDuplicateNumbersBetterWay(testValue), 3);
+    Assert.assertEquals(duplicate.findDuplicateNumbersBetterWay(testValue1), 1);
+    Assert.assertEquals(duplicate.findDuplicateNumbersBetterWay(testValue2), 1);
+    Assert.assertEquals(duplicate.findDuplicateNumbersBetterWay(testValue3), -1);
+
+    Assert.assertEquals(duplicate.findDuplicateNumbersAnotherWay(testValue), 3);
+    Assert.assertEquals(duplicate.findDuplicateNumbersAnotherWay(testValue1), 1);
+    Assert.assertEquals(duplicate.findDuplicateNumbersAnotherWay(testValue2), 1);
+    Assert.assertEquals(duplicate.findDuplicateNumbersAnotherWay(testValue3), -1);
   }
 
   @Test
