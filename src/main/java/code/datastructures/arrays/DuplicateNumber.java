@@ -67,6 +67,24 @@ public class DuplicateNumber {
     return -1;
   }
 
+  /**
+   * Find the duplicate number in a string where it time should be less than O(n2) and space should
+   * be O(1).
+   */
+  public int findDuplicateNum(int[] arr) {
+    int slow = 0, fast = 0;
+    do {
+      slow = arr[slow];
+      fast = arr[arr[fast]];
+    } while (slow != fast);
+    slow = 0;
+    while (slow != fast) {
+      slow = arr[slow];
+      fast = arr[fast];
+    }
+    return slow;
+  }
+
   private void quickSort(int low, int high, int[] arr) {
     if (low < high) {
       int pivot = lomutoPartition(low, high, arr);
