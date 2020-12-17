@@ -113,24 +113,29 @@ public class ArrayTest {
   @Test
   public void testFindDuplicateNumber() {
     final DuplicateNumber duplicate = new DuplicateNumber();
-    int[] testValue = {3, 6, 8, 10, 2, 1, 3, -3, 9};
+    int[] testValue = {3, 60, 8, 10, 2, 1, 3, -3, 9};
     int[] testValue1 = {1, 1};
     int[] testValue2 = {1, 1, 2};
     int[] testValue3 = {1, 2, 3};
-    Assert.assertEquals(duplicate.findDuplicateNumbers(testValue), 3);
-    Assert.assertEquals(duplicate.findDuplicateNumbers(testValue1), 1);
-    Assert.assertEquals(duplicate.findDuplicateNumbers(testValue2), 1);
-    Assert.assertEquals(duplicate.findDuplicateNumbers(testValue3), -1);
+    Assert.assertEquals(duplicate.findDuplicateNumber_Naive(testValue), 3);
+    Assert.assertEquals(duplicate.findDuplicateNumber_Naive(testValue1), 1);
+    Assert.assertEquals(duplicate.findDuplicateNumber_Naive(testValue2), 1);
+    Assert.assertEquals(duplicate.findDuplicateNumber_Naive(testValue3), -1);
 
-    Assert.assertEquals(duplicate.findDuplicateNumbersBetterWay(testValue), 3);
-    Assert.assertEquals(duplicate.findDuplicateNumbersBetterWay(testValue1), 1);
-    Assert.assertEquals(duplicate.findDuplicateNumbersBetterWay(testValue2), 1);
-    Assert.assertEquals(duplicate.findDuplicateNumbersBetterWay(testValue3), -1);
+    Assert.assertEquals(duplicate.findDuplicateNumber_ExtraSpace(testValue), 3);
+    Assert.assertEquals(duplicate.findDuplicateNumber_ExtraSpace(testValue1), 1);
+    Assert.assertEquals(duplicate.findDuplicateNumber_ExtraSpace(testValue2), 1);
+    Assert.assertEquals(duplicate.findDuplicateNumber_ExtraSpace(testValue3), -1);
 
-    Assert.assertEquals(duplicate.findDuplicateNumbersAnotherWay(testValue), 3);
-    Assert.assertEquals(duplicate.findDuplicateNumbersAnotherWay(testValue1), 1);
-    Assert.assertEquals(duplicate.findDuplicateNumbersAnotherWay(testValue2), 1);
-    Assert.assertEquals(duplicate.findDuplicateNumbersAnotherWay(testValue3), -1);
+    Assert.assertEquals(duplicate.findDuplicateNumber_Sorting(testValue), 3);
+    Assert.assertEquals(duplicate.findDuplicateNumber_Sorting(testValue1), 1);
+    Assert.assertEquals(duplicate.findDuplicateNumber_Sorting(testValue2), 1);
+    Assert.assertEquals(duplicate.findDuplicateNumber_Sorting(testValue3), -1);
+
+    Assert.assertEquals(duplicate.findDuplicateNumber_Fastest(testValue), 3);
+    Assert.assertEquals(duplicate.findDuplicateNumber_Fastest(testValue1), 1);
+    Assert.assertEquals(duplicate.findDuplicateNumber_Fastest(testValue2), 1);
+    Assert.assertEquals(duplicate.findDuplicateNumber_Fastest(testValue3), -1);
   }
 
   @Test
