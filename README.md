@@ -12,6 +12,7 @@ Easy
 3. [Find the Max and Second Max element in an array.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/arrays/MaxAndSecondMax.java)
 4. [Move negative elements to the left of the array.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/arrays/NegativeElements.java)
 5. [Rotate and array N number of times in O(n) time.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/arrays/RotateArray.java)
+
 Medium
 
 6. [Get the nth smallest element in an array in O(n) time.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/arrays/NthSmallestElement.java)
