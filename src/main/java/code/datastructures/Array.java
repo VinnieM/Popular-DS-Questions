@@ -26,53 +26,6 @@ public class Array {
     }
   }
 
-
-  /**
-   * Find all the duplicate numbers in an array.
-   */
-  public void findAllDuplicatesNumbers(int[] arr) {
-    HashMap<Integer, Integer> hashMap = new HashMap<>();
-    for (int eachValue : arr) {
-      if (hashMap.containsKey(eachValue)) {
-        int value = hashMap.get(eachValue);
-        hashMap.put(eachValue, ++value);
-      } else {
-        hashMap.put(eachValue, 1);
-      }
-    }
-    hashMap.forEach((x, y) -> {
-      if (y > 1) {
-        System.out.println("The number " + x + " is repeating " + y + " times.");
-      }
-    });
-  }
-
-  /**
-   * Merge 2 arrays without extra space
-   */
-  public void merge(int[] arr1, int[] arr2) {
-    int i = 0, j = 0;
-    int arr1Length = arr1.length, arr2Length = arr2.length;
-
-    while (i < arr1Length && j < arr2Length) {
-      if (arr1[i] < arr2[j]) {
-        System.out.print(arr1[i] + " ");
-        ++i;
-      } else {
-        System.out.print(arr2[j] + " ");
-        ++j;
-      }
-    }
-    while (i < arr1Length) {
-      System.out.print(arr1[i] + " ");
-      ++i;
-    }
-    while (j < arr2Length) {
-      System.out.print(arr2[j] + " ");
-      ++j;
-    }
-  }
-
   /**
    * This the Kadane's Algorithm which is used to find the longest subarray sequence.
    */
