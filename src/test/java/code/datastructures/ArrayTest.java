@@ -87,6 +87,9 @@ public class ArrayTest {
     int[] expectedValue = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
     Assert.assertArrayEquals(expectedValue,
         union.mergeSortedArrays(TestData.tinyArray, TestData.tinyArray2));
+    int[] set1 = {1, 4, 5, 9, 10, 15, 20};
+    int[] set2 = {2, 3, 8, 13, 21};
+    union.mergeArrays(set1, set2);
   }
 
   @Test
