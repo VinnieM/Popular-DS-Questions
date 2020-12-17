@@ -1,6 +1,7 @@
 package code.datastructures;
 
 import code.datastructures.arrays.ArrayUnion;
+import code.datastructures.arrays.LargestSum;
 import code.datastructures.arrays.MaxAndSecondMax;
 import code.datastructures.arrays.MaxMinElement;
 import code.datastructures.arrays.NegativeElements;
@@ -83,7 +84,8 @@ public class ArrayTest {
   public void testFindUnionOfArrays() {
     final ArrayUnion union = new ArrayUnion();
     int[] expectedValue = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-    Assert.assertArrayEquals(expectedValue, union.mergeSortedArrays(TestData.tinyArray, TestData.tinyArray2));
+    Assert.assertArrayEquals(expectedValue,
+        union.mergeSortedArrays(TestData.tinyArray, TestData.tinyArray2));
   }
 
   @Test
@@ -100,8 +102,11 @@ public class ArrayTest {
 
   @Test
   public void testLargestSubArray() {
+    final LargestSum sum = new LargestSum();
     int[] testValue = {-3, 8, -2, 4, -5, 6};
-    Assert.assertEquals(arrayQuestions.largestSubArray(testValue), 11);
+    int[] testValue2 = {1, 2, 3, -2, 5};
+    Assert.assertEquals(sum.largestContiguousSubArray(testValue), 11);
+    Assert.assertEquals(sum.largestContiguousSubArray(testValue2), 9);
   }
 
   @Test
