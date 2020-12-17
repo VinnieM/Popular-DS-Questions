@@ -9,10 +9,10 @@ public class DuplicateNumber {
    * Find the duplicate number in an unsorted array. Time complexity O(n2), Space complexity is
    * O(1). Returns -1 is duplicate numbers are not found. Level - Easy.
    */
-  public int findDuplicateNumbers(int[] arr) {
+  public int findDuplicateNumber_Naive(int[] arr) {
     for (int i = 0; i < arr.length; i++) {
       for (int j = i; j < arr.length; j++) {
-        if (i !=j && arr[i] == arr[j]) {
+        if (i != j && arr[i] == arr[j]) {
           return arr[i];
         }
       }
@@ -22,10 +22,9 @@ public class DuplicateNumber {
 
   /**
    * Find the duplicate number in an unsorted array. Time complexity is O(n) and space complexity is
-   * O(n).
-   * Level - Easy
+   * O(n). Level - Easy
    */
-  public int findDuplicateNumbersBetterWay(int[] arr) {
+  public int findDuplicateNumber_ExtraSpace(int[] arr) {
     Set<Integer> set = new HashSet<>();
     for (int i = 0; i < arr.length; i++) {
       if (set.contains(arr[i])) {
@@ -40,12 +39,28 @@ public class DuplicateNumber {
    * This function finds the duplicate number in a given array in O(n Log n) time and O(1) space.
    * Level - Medium.
    */
-  public int findDuplicateNumbersAnotherWay(int[] arr) {
+  public int findDuplicateNumber_Sorting(int[] arr) {
     quickSort(0, arr.length - 1, arr);
     int j = 0;
     for (int i = 1; i < arr.length; i++, j++) {
       if (arr[j] == arr[i]) {
         return arr[j];
+      }
+    }
+    return -1;
+  }
+
+  /**
+   * This function finds the duplicate number in a given array
+   */
+  public int findDuplicateNumber_Fastest(int[] arr) {
+    for (int i = 0; i < arr.length; i++) {
+      int index = Math.abs(arr[i]) - 1;
+      if (index < arr.length -1 ) {
+        if (arr[index] < 0) {
+          return Math.abs(arr[index]);
+        }
+        arr[index] = -arr[index];
       }
     }
     return -1;
