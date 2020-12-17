@@ -134,12 +134,6 @@ public class ArrayTest {
   }
 
   @Test
-  public void testFindDuplicateNumbers() {
-    int[] testValue = {3, 6, 8, 10, 2, 1, 3, -3, 9, 2};
-    arrayQuestions.findAllDuplicatesNumbers(testValue);
-  }
-
-  @Test
   public void testMerge() {
     int[] testValue = {1, 3, 5, 7};
     int[] testValue2 = {0, 2, 6, 8, 9};
