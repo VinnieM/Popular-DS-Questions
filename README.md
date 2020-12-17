@@ -19,7 +19,7 @@ Medium
 8. [Merge 2 sorted arrays.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/arrays/ArrayUnion.java)
 9. [Find the largest sub array in O(n) time.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/arrays/LargestSum.java)
 10. [Find all duplicate numbers in an array.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/arrays/DuplicateNumber.java)
-11. Find the duplicate number in an array of N + 1 integers ( Solution for O(n) and O(nlogn) )
+11. Find the duplicate number in an array of N + 1 integers.
 12. Merge 2 sorted arrays without using extra space.
 13. Kadanes Algorithm.
 14. Move all the zero's to the left in O(n) time and and O(1) space.
