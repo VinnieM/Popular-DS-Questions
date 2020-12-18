@@ -5,8 +5,8 @@ import java.util.Objects;
 public class PatternRecognition {
 
   /**
-   * Return the number of times the provided pattern appears in the string. Time complexity is O(n +
-   * m). Time complexity is O(1).
+   * Return the number of times the provided pattern appears in the string. The fucntion used the
+   * Rabin-karp algorithm.Time complexity is O(n + m). Time complexity is O(1).
    * Level - Medium.
    */
   public int getTotalNumberOfPatterns(String text, String pattern) {
