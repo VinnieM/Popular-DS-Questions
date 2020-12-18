@@ -10,6 +10,7 @@ import code.datastructures.arrays.NthSmallestElement;
 import code.datastructures.arrays.ReverseArray;
 import code.datastructures.arrays.RotateArray;
 import code.datastructures.arrays.SortCustomArray;
+import code.datastructures.arrays.WindowSliding;
 import code.utils.TestData;
 import java.util.Arrays;
 import org.junit.Assert;
@@ -148,6 +149,19 @@ public class ArrayTest {
     Assert.assertEquals(duplicate.findDuplicateNumber_Fastest(testValue1), 1);
     Assert.assertEquals(duplicate.findDuplicateNumber_Fastest(testValue2), 1);
     Assert.assertEquals(duplicate.findDuplicateNumber_Fastest(testValue3), -1);
+  }
+
+  @Test
+  public void getMaximumSum() {
+    WindowSliding windowSliding = new WindowSliding();
+    int[] test1 = {100, 200, 300, 400};
+    int[] test2 = {1, 4, 2, 10, 23, 3, 1, 0, 20};
+    int[] test3 = {2, 3};
+    int result1 = 700, result2 = 39, result3 = -1;
+
+    Assert.assertEquals(windowSliding.getMaximumSum(test1, 2), result1);
+    Assert.assertEquals(windowSliding.getMaximumSum(test2, 4), result2);
+    Assert.assertEquals(windowSliding.getMaximumSum(test3, 3), result3);
   }
 
   @Test
