@@ -2,41 +2,9 @@ package code.datastructures;
 
 import java.util.Arrays;
 import java.util.Comparator;
-import java.util.HashMap;
 import java.util.Stack;
 
 public class Array {
-
-  /**
-   * Minimum number of jumps.
-   */
-  public int minimumNumberOfJumps(int[] arr) {
-    int currentLength = arr.length - 1, totalJumps = 0,
-        i = 0, value = 0;
-    while (true) {
-      value = arr[i];
-      if (value >= currentLength) {
-        return ++totalJumps;
-      } else if (value == 0) {
-        return -1;
-      }
-      i = i + value;
-      ++totalJumps;
-      currentLength -= i;
-    }
-  }
-
-  /**
-   * This the Kadane's Algorithm which is used to find the longest subarray sequence.
-   */
-  public int kadanesAlgorithm(int[] arr) {
-    int currentMax = arr[0], maxSum = arr[0];
-    for (int i = 1; i < arr.length; i++) {
-      currentMax = Math.max(currentMax + arr[i], arr[i]);
-      maxSum = Math.max(currentMax, maxSum);
-    }
-    return maxSum;
-  }
 
   /**
    * Given an array, move all the zeros to the left and other elements to the right in O(n) time and
