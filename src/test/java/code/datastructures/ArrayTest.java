@@ -109,8 +109,17 @@ public class ArrayTest {
     final LargestSum sum = new LargestSum();
     int[] testValue = {-3, 8, -2, 4, -5, 6};
     int[] testValue2 = {1, 2, 3, -2, 5};
+    int[] testValue3 = {1, 2, 3, -2, 5};
+    int[] testValue4 = {-1, -2, -3, -4};
     Assert.assertEquals(sum.largestContiguousSubArray(testValue), 11);
     Assert.assertEquals(sum.largestContiguousSubArray(testValue2), 9);
+    Assert.assertEquals(sum.largestContiguousSubArray(testValue3), 9);
+    Assert.assertEquals(sum.largestContiguousSubArray(testValue4), -1);
+
+    Assert.assertEquals(sum.kadanesAlgorithm(testValue), 11);
+    Assert.assertEquals(sum.kadanesAlgorithm(testValue2), 9);
+    Assert.assertEquals(sum.kadanesAlgorithm(testValue3), 9);
+    Assert.assertEquals(sum.kadanesAlgorithm(testValue4), -1);
   }
 
   @Test
@@ -139,14 +148,6 @@ public class ArrayTest {
     Assert.assertEquals(duplicate.findDuplicateNumber_Fastest(testValue1), 1);
     Assert.assertEquals(duplicate.findDuplicateNumber_Fastest(testValue2), 1);
     Assert.assertEquals(duplicate.findDuplicateNumber_Fastest(testValue3), -1);
-  }
-
-  @Test
-  public void testKadanesAlgorithm() {
-    int[] testValue = {1, 2, 3, -2, 5};
-    int[] testValue2 = {-1, -2, -3, -4};
-    Assert.assertEquals(arrayQuestions.kadanesAlgorithm(testValue), 9);
-    Assert.assertEquals(arrayQuestions.kadanesAlgorithm(testValue2), -1);
   }
 
   @Test
