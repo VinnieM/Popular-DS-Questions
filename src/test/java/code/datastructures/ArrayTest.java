@@ -7,6 +7,7 @@ import code.datastructures.arrays.MaxAndSecondMax;
 import code.datastructures.arrays.MaxMinElement;
 import code.datastructures.arrays.NegativeElements;
 import code.datastructures.arrays.NthSmallestElement;
+import code.datastructures.arrays.PatternRecognition;
 import code.datastructures.arrays.ReverseArray;
 import code.datastructures.arrays.RotateArray;
 import code.datastructures.arrays.SortCustomArray;
@@ -152,7 +153,7 @@ public class ArrayTest {
   }
 
   @Test
-  public void getMaximumSum() {
+  public void testMaximumSum() {
     WindowSliding windowSliding = new WindowSliding();
     int[] test1 = {100, 200, 300, 400};
     int[] test2 = {1, 4, 2, 10, 23, 3, 1, 0, 20};
@@ -162,6 +163,20 @@ public class ArrayTest {
     Assert.assertEquals(windowSliding.getMaximumSum(test1, 2), result1);
     Assert.assertEquals(windowSliding.getMaximumSum(test2, 4), result2);
     Assert.assertEquals(windowSliding.getMaximumSum(test3, 3), result3);
+  }
+
+  @Test
+  public void testTotalNumberOfPattern() {
+    PatternRecognition pattern = new PatternRecognition();
+    String text1 = "bcdefbcbebc|abcdebcfgsdf|cbdbesfbcy|1bcdef23423bc32";
+    String text2 = "aaaakjlhaa|aaadsaaa|easaaad|sa";
+    String text3 = "bcdefbcbebc|abcdebcfgsdf|cbdbesfbcy|1bcdef23423bc32";
+    String text4 = "bcdefbcbebc|abcdebcfgsdf|cbdbesfbcy|1bcdef23423bc32";
+
+    Assert.assertEquals(pattern.getTotalNumberOfPatterns(text1, "bc"), 8);
+    Assert.assertEquals(pattern.getTotalNumberOfPatterns(text2, "aa"), 10);
+    Assert.assertEquals(pattern.getTotalNumberOfPatterns(text3, "b"), 11);
+    Assert.assertEquals(pattern.getTotalNumberOfPatterns(text4, ""), 0);
   }
 
   @Test
