@@ -5,6 +5,7 @@ import code.datastructures.arrays.DuplicateNumber;
 import code.datastructures.arrays.LargestSum;
 import code.datastructures.arrays.MaxAndSecondMax;
 import code.datastructures.arrays.MaxMinElement;
+import code.datastructures.arrays.MinimumDeletions;
 import code.datastructures.arrays.NegativeElements;
 import code.datastructures.arrays.NthSmallestElement;
 import code.datastructures.arrays.PatternRecognition;
@@ -177,6 +178,17 @@ public class ArrayTest {
     Assert.assertEquals(pattern.getTotalNumberOfPatterns(text2, "aa"), 10);
     Assert.assertEquals(pattern.getTotalNumberOfPatterns(text3, "b"), 11);
     Assert.assertEquals(pattern.getTotalNumberOfPatterns(text4, ""), 0);
+  }
+
+  @Test
+  public void minimumNumberOfDeletions() {
+    MinimumDeletions minDeletions = new MinimumDeletions();
+    String test1 = "aab";
+    String test2 = "aaabbbcc";
+    String test3 = "ceabaacb";
+    Assert.assertEquals(minDeletions.minimumDeletions(test1), 0);
+    Assert.assertEquals(minDeletions.minimumDeletions(test2), 2);
+    Assert.assertEquals(minDeletions.minimumDeletions(test3), 2);
   }
 
   @Test
