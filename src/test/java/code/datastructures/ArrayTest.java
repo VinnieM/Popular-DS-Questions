@@ -181,7 +181,7 @@ public class ArrayTest {
   }
 
   @Test
-  public void minimumNumberOfDeletions() {
+  public void testMinimumNumberOfDeletions() {
     MinimumDeletions minDeletions = new MinimumDeletions();
     String test1 = "aab";
     String test2 = "aaabbbcc";
