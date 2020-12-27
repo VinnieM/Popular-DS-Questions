@@ -29,4 +29,26 @@ public class ThreeNumberSum {
     }
     return returnValue;
   }
+
+  public List<Integer[]> threeNumberSum_Solution2(int[] array, int totalValue) {
+    Arrays.sort(array);
+    List<Integer[]> returnValue = new ArrayList<>();
+
+    for (int i = 0; i < array.length; i++) {
+      int j = i + 1, k = array.length - 1;
+      while (j < k) {
+        if (array[i] + array[j] + array[k] > totalValue) {
+          --k;
+        } else if (array[i] + array[j] + array[k] < totalValue) {
+          ++j;
+        } else if (array[i] + array[j] + array[k] == totalValue) {
+          Integer[] intArray = {array[i], array[j], array[k]};
+          returnValue.add(intArray);
+          ++j;
+          --k;
+        }
+      }
+    }
+    return returnValue;
+  }
 }
