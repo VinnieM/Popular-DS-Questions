@@ -12,12 +12,9 @@ import code.datastructures.arrays.PatternRecognition;
 import code.datastructures.arrays.ReverseArray;
 import code.datastructures.arrays.RotateArray;
 import code.datastructures.arrays.SortCustomArray;
-import code.datastructures.arrays.ThreeNumberSum;
 import code.datastructures.arrays.WindowSliding;
 import code.utils.TestData;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 import org.junit.Assert;
 import org.junit.Test;
 
