@@ -12,9 +12,12 @@ import code.datastructures.arrays.PatternRecognition;
 import code.datastructures.arrays.ReverseArray;
 import code.datastructures.arrays.RotateArray;
 import code.datastructures.arrays.SortCustomArray;
+import code.datastructures.arrays.ThreeNumberSum;
 import code.datastructures.arrays.WindowSliding;
 import code.utils.TestData;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -72,8 +75,7 @@ public class ArrayTest {
   public void testSortArrayOfZeroOneAndTwo() {
     final SortCustomArray customArray = new SortCustomArray();
     int[] temp = {0, 0, 0, 0, 1, 1, 2, 2};
-    int[] returnValue = customArray.sortCustomArray(new int[]{0, 2, 1, 0, 2, 0, 1, 0});
-    System.out.println(Arrays.toString(returnValue));
+    int[] returnValue = customArray.sortCustomArray_Solution2(new int[]{0, 2, 1, 0, 2, 0, 1, 0});
     Assert.assertArrayEquals(temp, returnValue);
   }
 
