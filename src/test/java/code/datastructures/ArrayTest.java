@@ -72,8 +72,10 @@ public class ArrayTest {
   public void testSortArrayOfZeroOneAndTwo() {
     final SortCustomArray customArray = new SortCustomArray();
     int[] temp = {0, 0, 0, 0, 1, 1, 2, 2};
-    int[] returnValue = customArray.sortCustomArray_Solution2(new int[]{0, 2, 1, 0, 2, 0, 1, 0});
+    int[] returnValue = customArray.sortCustomArray(new int[]{0, 2, 1, 0, 2, 0, 1, 0});
+    int[] returnValue2 = customArray.sortCustomArray_Solution2(new int[]{0, 2, 1, 0, 2, 0, 1, 0});
     Assert.assertArrayEquals(temp, returnValue);
+    Assert.assertArrayEquals(temp, returnValue2);
   }
 
   @Test
