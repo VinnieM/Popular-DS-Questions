@@ -6,6 +6,7 @@ import code.datastructures.arrays.LargestSum;
 import code.datastructures.arrays.MaxAndSecondMax;
 import code.datastructures.arrays.MaxMinElement;
 import code.datastructures.arrays.MinimumDeletions;
+import code.datastructures.arrays.MoveToLeft;
 import code.datastructures.arrays.NegativeElements;
 import code.datastructures.arrays.NthSmallestElement;
 import code.datastructures.arrays.PatternRecognition;
@@ -194,9 +195,10 @@ public class ArrayTest {
 
   @Test
   public void testMoveZeroToLeft() {
+    MoveToLeft moveToLeft = new MoveToLeft();
     int[] testValue = {1, 3, 0, 2, 5, 0, 7};
     int[] expectedValue = {0, 0, 1, 3, 2, 5, 7};
-    Assert.assertArrayEquals(arrayQuestions.moveZeroToLeft(testValue), expectedValue);
+    Assert.assertArrayEquals(moveToLeft.moveZeroToLeft(testValue), expectedValue);
   }
 
   @Test
