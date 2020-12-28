@@ -7,25 +7,6 @@ import java.util.Stack;
 public class Array {
 
   /**
-   * Given an array, move all the zeros to the left and other elements to the right in O(n) time and
-   * O(1) space.
-   */
-  public int[] moveZeroToLeft(int[] arr) {
-    int j = arr.length - 1;
-    for (int i = arr.length - 1; i >= 0; i--) {
-      if (arr[i] != 0) {
-        arr[j] = arr[i];
-        --j;
-      }
-    }
-    while (j >= 0) {
-      arr[j] = 0;
-      --j;
-    }
-    return arr;
-  }
-
-  /**
    * Any person in the queue can bribe the person directly in front of them to swap positions. If
    * two people swap positions, they still wear the same sticker denoting their original places in
    * line. One person can bribe at most two others.
