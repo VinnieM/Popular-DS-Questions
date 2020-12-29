@@ -2,6 +2,7 @@ package code.datastructures;
 
 import code.datastructures.sort.BubbleSort;
 import code.datastructures.sort.InsertionSort;
+import code.datastructures.sort.MergeSort;
 import code.datastructures.sort.QuickSort;
 import code.utils.TestData;
 import org.junit.Assert;
@@ -28,5 +29,12 @@ public class SortTest {
     QuickSort quickSort = new QuickSort();
     Assert.assertArrayEquals(quickSort.sort(TestData.tinyArrayUnsorted), TestData.tinyArray);
     Assert.assertArrayEquals(quickSort.sort(TestData.largeArrayUnsorted), TestData.largeArray);
+  }
+
+  @Test
+  public void testMergeSort() {
+    MergeSort mergeSort = new MergeSort();
+    Assert.assertArrayEquals(mergeSort.sort(TestData.tinyArrayUnsorted), TestData.tinyArray);
+    Assert.assertArrayEquals(mergeSort.sort(TestData.largeArrayUnsorted), TestData.largeArray);
   }
 }
