@@ -2,6 +2,10 @@ package code.datastructures.sort;
 
 public class MergeSort {
 
+  /**
+   * Standard Merge sort Algorithm. The Time complexity is O(n log n) and space complexity is O(n).
+   * The extra space is required for storing the sorted array.
+   */
   public int[] sort(int[] arr) {
     if (arr.length < 2) {
       return arr;
