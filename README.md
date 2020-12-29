@@ -44,6 +44,9 @@ Medium/Enumeration
 
 6. [Find all unique permutations in an array](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/recursion/Permutations.java)
 
+### Sorting
+1. [Bubble Sort](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/sort/BubbleSort.java)
+
 ## Contribute
 
 If you find a bug, or a better way to implement, please raise a pull request.
