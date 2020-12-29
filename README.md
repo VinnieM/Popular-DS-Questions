@@ -46,7 +46,7 @@ Medium/Enumeration
 
 ### Sorting
 1. [Bubble Sort](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/sort/BubbleSort.java)
-
+2. [InsertionSort](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/sort/InsertionSort.java)
 ## Contribute
 
 If you find a bug, or a better way to implement, please raise a pull request.
