@@ -12,6 +12,7 @@ import code.datastructures.arrays.NthSmallestElement;
 import code.datastructures.arrays.PatternRecognition;
 import code.datastructures.arrays.ReverseArray;
 import code.datastructures.arrays.RotateArray;
+import code.datastructures.arrays.SmallestDifference;
 import code.datastructures.arrays.SortCustomArray;
 import code.datastructures.arrays.WindowSliding;
 import code.utils.TestData;
@@ -199,6 +200,15 @@ public class ArrayTest {
     int[] testValue = {1, 3, 0, 2, 5, 0, 7};
     int[] expectedValue = {0, 0, 1, 3, 2, 5, 7};
     Assert.assertArrayEquals(moveToLeft.moveZeroToLeft(testValue), expectedValue);
+  }
+
+  @Test
+  public void testSmallestDifference() {
+    SmallestDifference smallestDifference = new SmallestDifference();
+    int[] testArray1 = {-1, 5, 10, 20, 28, 3};
+    int[] testArray2 = {26, 134, 135, 15, 17};
+    int[] expectedValue = {28, 26};
+    Assert.assertArrayEquals(expectedValue, smallestDifference.smallestDifference(testArray1, testArray2));
   }
 
   @Test
