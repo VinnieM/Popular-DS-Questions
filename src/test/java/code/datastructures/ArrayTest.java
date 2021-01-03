@@ -6,6 +6,7 @@ import code.datastructures.arrays.LargestSum;
 import code.datastructures.arrays.MaxAndSecondMax;
 import code.datastructures.arrays.MaxMinElement;
 import code.datastructures.arrays.MinimumDeletions;
+import code.datastructures.arrays.MoveElements;
 import code.datastructures.arrays.MoveToLeft;
 import code.datastructures.arrays.NegativeElements;
 import code.datastructures.arrays.NthSmallestElement;
@@ -208,7 +209,15 @@ public class ArrayTest {
     int[] testArray1 = {-1, 5, 10, 20, 28, 3};
     int[] testArray2 = {26, 134, 135, 15, 17};
     int[] expectedValue = {28, 26};
-    Assert.assertArrayEquals(expectedValue, smallestDifference.smallestDifference(testArray1, testArray2));
+    Assert.assertArrayEquals(expectedValue,
+        smallestDifference.smallestDifference(testArray1, testArray2));
+  }
+
+  @Test
+  public void testMoveElements() {
+    MoveElements moveElements = new MoveElements();
+    Assert.assertArrayEquals(moveElements.moveElementToRight(new int[]{2, 1, 2, 2, 2, 3, 4, 2}, 2)
+        , new int[]{4, 1, 3, 2, 2, 2, 2, 2});
   }
 
   @Test
