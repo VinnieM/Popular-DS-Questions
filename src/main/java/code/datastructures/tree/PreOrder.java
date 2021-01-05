@@ -3,12 +3,28 @@ package code.datastructures.tree;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * This class implements a binary tree with the below values.
+ *                 30
+ *                 / \
+ *               20   40
+ *              / \   / \
+ *             10 25 35 50
+ *                        \
+ *                        55
+ * A PreOrder traversal is done on the above tree.
+ *
+ */
 public class PreOrder {
 
   public List<Integer> preOrder(Tree root) {
     return getPreOrderResult(root, new ArrayList<>());
   }
 
+  /**
+   * This function is recursively called. The time complexity is O(n) and the space complexity is
+   * O(h + 1) where h is the height of the binary tree.
+   */
   private List<Integer> getPreOrderResult(Tree root, ArrayList<Integer> toReturn) {
     if (root != null) {
       toReturn.add(root.data);
@@ -18,6 +34,9 @@ public class PreOrder {
     return toReturn;
   }
 
+  /**
+   * This is the main class. The Tree values are populated here.
+   */
   public static void main(String[] arg) {
     Tree root = new Tree(30);
 
@@ -33,15 +52,17 @@ public class PreOrder {
     PreOrder preOrderTraversal = new PreOrder();
     preOrderTraversal.preOrder(root).forEach(System.out::println);
   }
-}
 
-class Tree {
+  static class Tree {
 
-  int data;
-  Tree left, right;
+    int data;
+    Tree left, right;
 
-  public Tree(int data) {
-    this.data = data;
-    left = right = null;
+    public Tree(int data) {
+      this.data = data;
+      left = right = null;
+    }
   }
 }
+
+
