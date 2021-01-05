@@ -22,8 +22,8 @@ public class PreOrder {
   }
 
   /**
-   * This function is recursively called. The time complexity is O(n) and the space complexity is
-   * O(h + 1) where h is the height of the binary tree.
+   * This function prints the values of the tree in PreOrder fashion. The time complexity is O(n)
+   * and the space complexity is O(h + 1) where h is the height of the binary tree.
    */
   private List<Integer> getPreOrderResult(Tree root, ArrayList<Integer> toReturn) {
     if (root != null) {
