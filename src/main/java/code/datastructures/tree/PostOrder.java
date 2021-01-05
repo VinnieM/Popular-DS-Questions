@@ -11,7 +11,7 @@ import java.util.ArrayList;
  *             10 25 35 50
  *                        \
  *                        55
- * A PreOrder traversal is done on the above tree.
+ * A PostOrder traversal is done on the above tree.
  *
  */
 public class PostOrder {
