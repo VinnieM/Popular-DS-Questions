@@ -56,6 +56,9 @@ Medium/Enumeration
 1. [PreOrder Traversal](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/tree/PreOrder.java)
 2. [InOrder Traversal](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/tree/InOrder.java)
 3. [PostOrder Traversal](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/tree/PostOrder.java)
+4. [Breadth First Search](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/tree/BreadthFirstSearch.java)
+
+
 ## Contribute
 
 If you find a bug, or a better way to implement, please raise a pull request.
