@@ -22,8 +22,8 @@ public class InOrder {
   }
 
   /**
-   * This function is recursively called. The time complexity is O(n) and space complexity is O(h +
-   * 1) where h is the height of the binary tree.
+   * This function prints the contents of the tree in inOrder fashion. The time complexity is O(n)
+   * and space complexity is O(h + 1) where h is the height of the binary tree.
    */
   private List<Integer> traverseTree(Tree root, List<Integer> toReturn) {
     if (root != null) {
