@@ -58,6 +58,7 @@ Medium/Enumeration
 3. [PostOrder Traversal](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/tree/PostOrder.java)
 4. [Breadth First Search](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/tree/BreadthFirstSearch.java)
 5. [Breadth First Search Each line](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/tree/BreadthFirstSearchEachLine.java)
+6. [Height of a Binary Tree](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/tree/HeightOfBinaryTree.java)
 
 ## Contribute
 
