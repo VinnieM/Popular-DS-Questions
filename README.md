@@ -47,15 +47,26 @@ Medium/Enumeration
 6. [Find all unique permutations in an array](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/recursion/Permutations.java)
 
 ### Sorting
+Easy
 1. [Bubble Sort](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/sort/BubbleSort.java)
 2. [InsertionSort](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/sort/InsertionSort.java)
+
+Medium
+
 3. [QuickSort](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/sort/QuickSort.java)
+
+Hard
+
 4. [MergeSort](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/sort/MergeSort.java)
 
 ### Tree
+Easy
 1. [PreOrder Traversal](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/tree/PreOrder.java)
 2. [InOrder Traversal](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/tree/InOrder.java)
 3. [PostOrder Traversal](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/tree/PostOrder.java)
+
+Medium
+
 4. [Breadth First Search](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/tree/BreadthFirstSearch.java)
 5. [Breadth First Search Each line](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/tree/BreadthFirstSearchEachLine.java)
 6. [Height of a Binary Tree](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/tree/HeightOfBinaryTree.java)
