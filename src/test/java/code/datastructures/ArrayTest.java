@@ -15,6 +15,7 @@ import code.datastructures.arrays.ReverseArray;
 import code.datastructures.arrays.RotateArray;
 import code.datastructures.arrays.SmallestDifference;
 import code.datastructures.arrays.SortCustomArray;
+import code.datastructures.arrays.Urlify;
 import code.datastructures.arrays.WindowSliding;
 import code.utils.TestData;
 import java.util.Arrays;
@@ -218,6 +219,13 @@ public class ArrayTest {
     MoveElements moveElements = new MoveElements();
     Assert.assertArrayEquals(moveElements.moveElementToRight(new int[]{2, 1, 2, 2, 2, 3, 4, 2}, 2)
         , new int[]{4, 1, 3, 2, 2, 2, 2, 2});
+  }
+
+  @Test
+  public void testUrlify() {
+    Urlify url = new Urlify();
+    char[] expected = "Mr%20John%20Smith ".toCharArray();
+    Assert.assertArrayEquals(expected, url.urlify("Mr John Smith     ".toCharArray(), 13));
   }
 
   @Test
