@@ -36,8 +36,9 @@ Medium
 25. Given an array of intervals where intervals[i] = [starti, endi], merge all overlapping intervals, and return an array of the non-overlapping intervals that cover all the intervals in the input.
 
 ### Matrix
-Easy 
-1. [Add 2 matrices.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/matrix/AddMatrix.java)
+Easy
+1. [Print the given matrix.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/matrix/PrintMatrix.java)
+2. [Add 2 matrices.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/matrix/AddMatrix.java)
 ### Recursion
 Easy
 1. [Find the factorial of a number.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/recursion/FindFactorial.java)
