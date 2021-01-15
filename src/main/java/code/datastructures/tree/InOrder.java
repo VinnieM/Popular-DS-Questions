@@ -2,6 +2,7 @@ package code.datastructures.tree;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Stack;
 
 /**
  * This class implements a binary tree with the below values.
@@ -13,7 +14,6 @@ import java.util.List;
  *                        \
  *                        55
  * An InOrder traversal is done on the above tree.
- *
  */
 public class InOrder {
 
@@ -34,6 +34,28 @@ public class InOrder {
     return toReturn;
   }
 
+  private List<Integer> traverseTreeIterative(Tree root) {
+    List<Integer> list = new ArrayList<>();
+    if (root == null) {
+      return list;
+    }
+    Stack<Tree> stack = new Stack<>();
+    addUntilNull(stack, root);
+    while (!stack.isEmpty()) {
+      Tree current = stack.pop();
+      list.add(current.data);
+      addUntilNull(stack, current.right);
+    }
+    return list;
+  }
+
+  private void addUntilNull(Stack<Tree> stack, Tree root) {
+    while (root != null) {
+      stack.add(root);
+      root = root.left;
+    }
+  }
+
   public static void main(String[] args) {
     Tree root = new Tree(30);
 
@@ -47,11 +69,14 @@ public class InOrder {
     root.right.right.right = new Tree(55);
 
     InOrder traversal = new InOrder();
-    traversal.inOrder(root).forEach(System.out::println);
+    traversal.inOrder(root).forEach(x -> System.out.print(x + " "));
+    System.out.println();
+    traversal.traverseTreeIterative(root).forEach(x -> System.out.print(x + " "));
   }
 
 
   static class Tree {
+
     int data;
     Tree left, right;
 
