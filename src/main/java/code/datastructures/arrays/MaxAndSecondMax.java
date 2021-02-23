@@ -7,13 +7,13 @@ public class MaxAndSecondMax {
    * Level - Easy.
    */
   public int[] getMaxAndSecondMax(int[] arr) {
-    int max = arr[0], secondMax = arr[0];
+    int max = arr[0], secondMax = Integer.MIN_VALUE;
     for (int i = 0; i < arr.length; i++) {
       if (arr[i] > max) {
         secondMax = max;
         max = arr[i];
       }
-      if (arr[i] > secondMax && arr[i] != max) {
+      if (arr[i] > secondMax && arr[i] < max) {
         secondMax = arr[i];
       }
     }
