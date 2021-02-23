@@ -46,11 +46,15 @@ public class ArrayTest {
   @Test
   public void testMaxAndSecondMax() {
     final MaxAndSecondMax maxAndSecondMax = new MaxAndSecondMax();
+    int[] temp = {5, 4, 3, 2, 1};
     int[] returnValue = maxAndSecondMax.getMaxAndSecondMax(TestData.largeArrayUnsorted);
     Assert.assertArrayEquals(new int[]{100, 99}, returnValue);
 
     returnValue = maxAndSecondMax.getMaxAndSecondMax(TestData.mediumArrayUnsorted);
     Assert.assertArrayEquals(new int[]{50, 49}, returnValue);
+
+    returnValue = maxAndSecondMax.getMaxAndSecondMax(temp);
+    Assert.assertArrayEquals(new int[]{5, 4}, returnValue);
   }
 
   @Test
