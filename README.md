@@ -6,15 +6,11 @@ The implementation is in Java. The questions mentioned below, or a variation of 
 ## Problems
 
 ### Arrays
-Easy
 1. [Reverse an array without using extra space.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/arrays/ReverseArray.java)
 2. [Get the minimum and maximum element in an array.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/arrays/MaxMinElement.java)
 3. [Find the Max and Second Max element in an array.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/arrays/MaxAndSecondMax.java)
 4. [Move negative elements to the left of the array.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/arrays/NegativeElements.java)
 5. [Rotate and array N number of times in O(n) time.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/arrays/RotateArray.java)
-
-Medium
-
 6. [Get the nth smallest element in an array in O(n) time.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/arrays/NthSmallestElement.java)
 7. [Sort an array which contains only 0, 1 and 2 in O(n) time and O(1) space.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/arrays/SortCustomArray.java)
 8. [Merge 2 sorted arrays.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/arrays/ArrayUnion.java)
@@ -35,42 +31,27 @@ Medium
 24. Given an array of intervals where intervals[i] = [starti, endi], merge all overlapping intervals, and return an array of the non-overlapping intervals that cover all the intervals in the input.
 
 ### Matrix
-Easy
 1. [Print the given matrix.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/matrix/PrintMatrix.java)
 2. [Add 2 matrices.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/matrix/AddMatrix.java)
+
 ### Recursion
-Easy
 1. [Find the factorial of a number.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/recursion/FindFactorial.java)
 2. [Find the sum of the digits of a given number.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/recursion/FindSumOfDigits.java)
 3. [Reverse a string.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/recursion/ReverseString.java)
 4. [Check if a string is a palindrome.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/recursion/Palindrome.java)
 5. [Find the subsequence of two strings](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/recursion/CheckSubsequence.java)
-
-Medium/Enumeration
-
 6. [Find all unique permutations in an array](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/recursion/Permutations.java)
 
 ### Sorting
-Easy
 1. [Bubble Sort](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/sort/BubbleSort.java)
 2. [InsertionSort](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/sort/InsertionSort.java)
-
-Medium
-
 3. [QuickSort](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/sort/QuickSort.java)
-
-Hard
-
 4. [MergeSort](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/sort/MergeSort.java)
 
 ### Tree
-Easy
 1. [PreOrder Traversal](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/tree/PreOrder.java)
 2. [InOrder Traversal](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/tree/InOrder.java)
 3. [PostOrder Traversal](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/tree/PostOrder.java)
-
-Medium
-
 4. [Breadth First Search](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/tree/BreadthFirstSearch.java)
 5. [Breadth First Search Each line](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/tree/BreadthFirstSearchEachLine.java)
 6. [Height of a Binary Tree](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/tree/HeightOfBinaryTree.java)
