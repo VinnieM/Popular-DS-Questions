@@ -61,19 +61,11 @@ public class ArrayTest {
   public void testNthSmallest() {
     final NthSmallestElement smallestElement = new NthSmallestElement();
     int returnValue = smallestElement
-        .findTheNthSmallestElement(TestData.randomNumbers, 39, 0,
-            TestData.randomNumbers.length - 1);
-    Assert.assertEquals(returnValue, -310);
-
-    returnValue = smallestElement
-        .findTheNthSmallestElement(TestData.randomNumbers, 21, 0,
-            TestData.randomNumbers.length - 1);
-    Assert.assertEquals(returnValue, -372);
-
-    returnValue = smallestElement
-        .findTheNthSmallestElement(TestData.randomNumbers, 115, 0,
-            TestData.randomNumbers.length - 1);
-    Assert.assertEquals(returnValue, 41);
+        .findTheNthSmallestElement(TestData.smallArrayUnsorted, 5, 0,
+            TestData.smallArrayUnsorted.length - 1);
+    Assert.assertEquals(returnValue, 5);
+    returnValue = smallestElement.findTheNthSmallestElement(new int[]{7,10,4,3,20,15}, 3, 0, 5);
+    Assert.assertEquals(returnValue, 7);
   }
 
   @Test

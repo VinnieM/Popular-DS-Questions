@@ -6,16 +6,17 @@ public class NthSmallestElement {
    * Function to find the nth smallest element in an array. Time complexity is O(n) in average case
    * and space complexity is O(n). Level - Medium
    */
-  public int findTheNthSmallestElement(int[] arr, int nThSmallest, int low, int high) {
-    if (low < high) {
-      int pivot = lomutoPartition(low, high, arr);
-      if (pivot == nThSmallest) {
-        return arr[pivot];
+  public int findTheNthSmallestElement(int[] array, int nThSmallest, int left, int right) {
+    if (left < right) {
+      int position = lomutoPartition(left, right, array);
+      int count = position - left + 1;
+      if (count == nThSmallest) {
+        return array[position];
       }
-      if (nThSmallest > pivot) {
-        return findTheNthSmallestElement(arr, nThSmallest, pivot + 1, high);
+      if (count > nThSmallest) {
+        return findTheNthSmallestElement(array, nThSmallest, left, position - 1);
       }
-      return findTheNthSmallestElement(arr, nThSmallest, low, pivot - 1);
+      return findTheNthSmallestElement(array, nThSmallest - count, position + 1, right);
     }
     return -1;
   }
