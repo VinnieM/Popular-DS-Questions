@@ -23,12 +23,12 @@ The implementation is in Java. The questions mentioned below, or a variation of 
 15. [Given an array of integers of size ‘n’, calculate the maximum sum of ‘k’ consecutive elements in an array.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/arrays/WindowSliding.java)
 16. [Return the number of times a given pattern appears in a string.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/arrays/PatternRecognition.java)
 17. [Minimum Deletions to Make Character Frequencies Unique.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/arrays/MinimumDeletions.java)
-19. [Three Number Sum](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/arrays/ThreeNumberSum.java)
-20. [Move Zero's to the left while preserving the order of elements.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/arrays/MoveToLeft.java)
-21. [Smallest Difference. Given 2 non-empty arrays, find a pair of numbers who absolute difference is close to zero.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/arrays/SmallestDifference.java)
-22. [Move a given element to the right side of the array.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/arrays/MoveElements.java)
-23. [Urlify a given string without using extra space.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/arrays/Urlify.java)
-24. Given an array of intervals where intervals[i] = [starti, endi], merge all overlapping intervals, and return an array of the non-overlapping intervals that cover all the intervals in the input.
+18. [Three Number Sum](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/arrays/ThreeNumberSum.java)
+19. [Move Zero's to the left while preserving the order of elements.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/arrays/MoveToLeft.java)
+20. [Smallest Difference. Given 2 non-empty arrays, find a pair of numbers who absolute difference is close to zero.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/arrays/SmallestDifference.java)
+21. [Move a given element to the right side of the array.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/arrays/MoveElements.java)
+22. [Urlify a given string without using extra space.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/arrays/Urlify.java)
+23. [Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/arrays/TwoSums.java)
 
 ### Matrix
 1. [Print the given matrix.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/matrix/PrintMatrix.java)

@@ -51,13 +51,13 @@ public class DuplicateNumber {
   }
 
   /**
-   * This function finds the duplicate number, where an array contains N + 1 integers. Time complexity is O(n) and space complexity is O(1).
-   * Level - Medium.
+   * This function finds the duplicate number, where an array contains N + 1 integers. Time
+   * complexity is O(n) and space complexity is O(1). Level - Medium.
    */
   public int findDuplicateNumber_Fastest(int[] arr) {
     for (int i = 0; i < arr.length; i++) {
       int index = Math.abs(arr[i]) - 1;
-      if (index < arr.length -1 ) {
+      if (index < arr.length - 1) {
         if (arr[index] < 0) {
           return Math.abs(arr[index]);
         }
