@@ -29,6 +29,7 @@ The implementation is in Java. The questions mentioned below, or a variation of 
 21. [Move a given element to the right side of the array.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/arrays/MoveElements.java)
 22. [Urlify a given string without using extra space.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/arrays/Urlify.java)
 23. [Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/arrays/TwoSums.java)
+24. [Given two strings s1 and s2, return true if s2 contains a permutation of s1, or false otherwise.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/arrays/StringPermutation.java)
 
 ### Matrix
 1. [Print the given matrix.](https://github.com/VinnieM/Popular-DS-Questions/blob/main/src/main/java/code/datastructures/matrix/PrintMatrix.java)
